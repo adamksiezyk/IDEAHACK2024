@@ -8,7 +8,7 @@ import { Amplify } from "aws-amplify";
 import outputs from "@/amplify_outputs.json";
 import "@aws-amplify/ui-react/styles.css";
 import Link from "next/link";
-import Graph from "@/components/graph";
+import HERGraph from "@/components/graph";
 import dynamic from 'next/dynamic';
 
 import {
@@ -28,14 +28,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import CodeIcon from "@mui/icons-material/Code";
 import WorkIcon from "@mui/icons-material/Work";
+import HERBar from "@/components/HERbar";
+import Graph from "@/components/graph";
 
 
 
 Amplify.configure(outputs);
 
 const client = generateClient<Schema>();
-
-
 
 
 export default function Home() {
@@ -58,23 +58,9 @@ export default function Home() {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
 
-      {/* Top Navigation Bar */}
-      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
-        <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={() => setDrawerOpen(true)}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap>
-            Job Board
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <HERBar />
 
+        
       {/* Side Drawer */}
       <Drawer
         anchor="left"
@@ -113,52 +99,8 @@ export default function Home() {
       {/* Main Content */}
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
-        <Typography paragraph>
-          Welcome to the Job Board! Customize this section with additional content.
-        </Typography>
+        <Graph />
       </Box>
     </Box>
   );
 }
-
-// export default function App() {
-//   const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-
-//   function listTodos() {
-//     client.models.Todo.observeQuery().subscribe({
-//       next: (data) => setTodos([...data.items]),
-//     });
-//   }
-
-//   useEffect(() => {
-//     listTodos();
-//   }, []);
-
-//   function createTodo() {
-//     client.models.Todo.create({
-//       content: window.prompt("Todo content"),
-//     });
-//   }
-
-
-
-//   return (
-//     <main>
-//       <h1>My todos</h1>
-//       <button onClick={createTodo}>+ new</button>
-//       <ul>
-//         {todos.map((todo) => (
-//           <li key={todo.id}>{todo.content}</li>
-//         ))}
-//       </ul>
-//       <div>
-//         🥳 App successfully hosted. Try creating a new todo.
-//         <br />
-//         <a href="https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/">
-//           Review next steps of this tutorial.
-//         </a>
-//         <Graph />
-//       </div>
-//     </main>
-//   );
-// }

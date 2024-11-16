@@ -5,8 +5,11 @@ import dynamic from "next/dynamic";
 
 import React from 'react';
 import CytoscapeComponent from "react-cytoscapejs";
+import { Box, Typography } from "@mui/material";
 
-export default function Graph () {
+
+
+export default function HERGraph () {
   // Sample graph data: nodes and edges
   const elements = [
     { data: { id: 's1', label: 'Scientist 1' } },
@@ -33,7 +36,18 @@ export default function Graph () {
   ];
 
   return (
-    <div>
+    <Box
+      sx={{
+        width: "100%",
+        height: "400px",
+        backgroundColor: "#333333", // Placeholder background
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        borderRadius: "8px",
+      }}
+    >
+<div>
       <h1 style={{ textAlign: 'center' }}>Graph Visualization</h1>
       <CytoscapeComponent
         elements={elements}
@@ -74,6 +88,7 @@ export default function Graph () {
         ]}
       />
     </div>
+    </Box>    
   );
 };
 
