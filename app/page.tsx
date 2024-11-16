@@ -41,25 +41,8 @@ const client = generateClient<Schema>();
 export default function Home() {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
-  const toggleDrawer =
-    (open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent): void => {
-      if (
-        event.type === "keydown" &&
-        ((event as React.KeyboardEvent).key === "Tab" ||
-          (event as React.KeyboardEvent).key === "Shift")
-      ) {
-        return;
-      }
-      setDrawerOpen(open);
-    };
 
   return (
-    <Box>
-      <CssBaseline />
-
-
         <Graph />
-    </Box>
   );
 }

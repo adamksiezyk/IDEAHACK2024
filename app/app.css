@@ -83,12 +83,7 @@ body {
   justify-content: space-between;
 }
 
-/* Side Drawer Styling */
-.MuiDrawer-paper {
-  background-color: #1e1e1e; /* Dark gray background for Drawer */
-  color: #ffffff; /* White text */
-  width: 240px; /* Drawer width */
-}
+
 
 .MuiList-root {
   padding: 0;
@@ -177,15 +172,3 @@ button:hover {
   background-color: #145f8c; /* Darker blue on hover */
 }
 
-/* Flexbox Utility Classes */
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
