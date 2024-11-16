@@ -1,0 +1,293 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "researcher",
+            "name": "Dr. Emily Carter",
+            "title": "Assistant Professor",
+            "institution": "Harvard University",
+            "department": "Physics",
+            "expertise": [
+                "Quantum Mechanics",
+                "Optics",
+                "Photonics"
+            ],
+            "skills": [
+                "MATLAB",
+                "Python",
+                "Simulation Design"
+            ],
+            "publications": [
+                "p6",
+                "p7"
+            ],
+            "patents": [
+                "pat4"
+            ],
+            "projectHistory": [
+                "proj4"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Physics",
+                    "institution": "Harvard University",
+                    "year": 2015
+                }
+            ],
+            "availability": "Full-time teaching and research",
+            "location": "Cambridge, MA",
+            "languages": [
+                "English",
+                "French"
+            ],
+            "id": "r3"
+        },
+        {
+            "type": "researcher",
+            "name": "Dr. Maria Santos",
+            "title": "AI Research Scientist",
+            "institution": "Stanford University",
+            "department": "Computer Science",
+            "expertise": [
+                "Machine Learning",
+                "Computer Vision",
+                "Natural Language Processing"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "PyTorch",
+                "Deep Learning"
+            ],
+            "publications": [
+                "p15",
+                "p16",
+                "p17"
+            ],
+            "patents": [
+                "pat9"
+            ],
+            "projectHistory": [
+                "proj10",
+                "proj11"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Computer Science",
+                    "institution": "UC Berkeley",
+                    "year": 2019
+                }
+            ],
+            "availability": "Full-time research",
+            "location": "San Francisco, CA",
+            "id": "r6"
+        },
+        {
+            "type": "researcher",
+            "name": "Dr. Rachel Kim",
+            "title": "Quantum Computing Specialist",
+            "institution": "MIT",
+            "department": "Physics",
+            "expertise": [
+                "Quantum Computing",
+                "Quantum Error Correction",
+                "Photonics"
+            ],
+            "skills": [
+                "Python",
+                "MATLAB",
+                "Circuit Simulation"
+            ],
+            "publications": [
+                "p34",
+                "p35"
+            ],
+            "patents": [
+                "pat18"
+            ],
+            "projectHistory": [
+                "proj4",
+                "proj14"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Physics",
+                    "institution": "Harvard University",
+                    "year": 2017
+                }
+            ],
+            "availability": "Full-time research",
+            "location": "Cambridge, MA",
+            "languages": [
+                "English",
+                "Korean"
+            ],
+            "id": "r14"
+        },
+        {
+            "name": "Stanford University",
+            "type": "institution",
+            "id": "inst_Stanford_University"
+        },
+        {
+            "type": "researcher",
+            "name": "Dr. Sophia Brown",
+            "title": "Robotics Researcher",
+            "institution": "Stanford University",
+            "department": "Computer Science",
+            "expertise": [
+                "Humanoid Robotics",
+                "Machine Learning",
+                "Control Systems"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "Control Theory",
+                "ROS"
+            ],
+            "publications": [
+                "p36",
+                "p37"
+            ],
+            "patents": [
+                "pat19"
+            ],
+            "projectHistory": [
+                "proj5",
+                "proj8"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Robotics",
+                    "institution": "UC Berkeley",
+                    "year": 2019
+                }
+            ],
+            "availability": "Project-based",
+            "location": "San Francisco, CA",
+            "languages": [
+                "English",
+                "Japanese"
+            ],
+            "id": "r15"
+        },
+        {
+            "name": "Python",
+            "type": "skill",
+            "id": "skill_Python"
+        },
+        {
+            "type": "researcher",
+            "name": "Dr. Sarah Chen",
+            "title": "Senior Research Scientist",
+            "institution": "Stanford University",
+            "department": "Computer Science",
+            "expertise": [
+                "Machine Learning",
+                "Computer Vision",
+                "Neural Networks"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "PyTorch",
+                "Research Design"
+            ],
+            "publications": [
+                "p1",
+                "p2",
+                "p3"
+            ],
+            "patents": [
+                "pat1"
+            ],
+            "projectHistory": [
+                "proj1",
+                "proj3"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Computer Science",
+                    "institution": "MIT",
+                    "year": 2018
+                }
+            ],
+            "certifications": [
+                "Deep Learning Specialization"
+            ],
+            "availability": "Part-time collaboration",
+            "desiredRoles": [
+                "Technical Advisor",
+                "Research Lead"
+            ],
+            "preferredIndustries": [
+                "Healthcare",
+                "Robotics"
+            ],
+            "location": "San Francisco, CA",
+            "languages": [
+                "English",
+                "Mandarin"
+            ],
+            "id": "r1"
+        }
+    ],
+    "links": [
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "source": "r3",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 5,
+            "source": "r6",
+            "target": "inst_Stanford_University"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "source": "r6",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "source": "r14",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 5,
+            "source": "inst_Stanford_University",
+            "target": "r1"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 5,
+            "source": "inst_Stanford_University",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "source": "r15",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "source": "skill_Python",
+            "target": "r1"
+        }
+    ]
+}

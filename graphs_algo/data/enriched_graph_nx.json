@@ -1,0 +1,1464 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "id": "r1",
+            "type": "researcher",
+            "name": "Dr. Sarah Chen",
+            "title": "Senior Research Scientist",
+            "institution": "Stanford University",
+            "department": "Computer Science",
+            "expertise": [
+                "Machine Learning",
+                "Computer Vision",
+                "Neural Networks"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "PyTorch",
+                "Research Design"
+            ],
+            "publications": [
+                "p1",
+                "p2",
+                "p3"
+            ],
+            "patents": [
+                "pat1"
+            ],
+            "projectHistory": [
+                "proj1",
+                "proj3"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Computer Science",
+                    "institution": "MIT",
+                    "year": 2018
+                }
+            ],
+            "certifications": [
+                "Deep Learning Specialization"
+            ],
+            "availability": "Part-time collaboration",
+            "desiredRoles": [
+                "Technical Advisor",
+                "Research Lead"
+            ],
+            "preferredIndustries": [
+                "Healthcare",
+                "Robotics"
+            ],
+            "location": "San Francisco, CA",
+            "languages": [
+                "English",
+                "Mandarin"
+            ]
+        },
+        {
+            "name": "Stanford University",
+            "type": "institution",
+            "id": "inst_Stanford_University"
+        },
+        {
+            "type": "patent",
+            "id": "pat1"
+        },
+        {
+            "name": "Python",
+            "type": "skill",
+            "id": "skill_Python"
+        },
+        {
+            "name": "TensorFlow",
+            "type": "skill",
+            "id": "skill_TensorFlow"
+        },
+        {
+            "name": "PyTorch",
+            "type": "skill",
+            "id": "skill_PyTorch"
+        },
+        {
+            "name": "Research Design",
+            "type": "skill",
+            "id": "skill_Research_Design"
+        },
+        {
+            "type": "project",
+            "id": "proj1"
+        },
+        {
+            "type": "project",
+            "id": "proj3"
+        },
+        {
+            "institution": "MIT",
+            "degree": "PhD",
+            "field": "Computer Science",
+            "type": "education",
+            "id": "edu_MIT"
+        },
+        {
+            "name": "Healthcare",
+            "type": "industry",
+            "id": "industry_Healthcare"
+        },
+        {
+            "name": "Robotics",
+            "type": "industry",
+            "id": "industry_Robotics"
+        },
+        {
+            "name": "Machine Learning",
+            "type": "expertise",
+            "id": "expertise_Machine_Learning"
+        },
+        {
+            "name": "Computer Vision",
+            "type": "expertise",
+            "id": "expertise_Computer_Vision"
+        },
+        {
+            "name": "Neural Networks",
+            "type": "expertise",
+            "id": "expertise_Neural_Networks"
+        },
+        {
+            "id": "r2",
+            "type": "researcher",
+            "name": "Prof. Marcus Weber",
+            "title": "Professor of Chemistry",
+            "institution": "ETH Zurich",
+            "expertise": [
+                "Materials Science",
+                "Nanotechnology",
+                "Green Chemistry"
+            ],
+            "skills": [
+                "Lab Management",
+                "Grant Writing",
+                "Materials Characterization"
+            ],
+            "publications": [
+                "p4",
+                "p5"
+            ],
+            "patents": [
+                "pat2",
+                "pat3"
+            ],
+            "projectHistory": [
+                "proj2"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Chemistry",
+                    "institution": "Cambridge University",
+                    "year": 2010
+                }
+            ],
+            "availability": "Research consulting",
+            "location": "Zurich, Switzerland"
+        },
+        {
+            "name": "ETH Zurich",
+            "type": "institution",
+            "id": "inst_ETH_Zurich"
+        },
+        {
+            "type": "patent",
+            "id": "pat2"
+        },
+        {
+            "type": "patent",
+            "id": "pat3"
+        },
+        {
+            "name": "Lab Management",
+            "type": "skill",
+            "id": "skill_Lab_Management"
+        },
+        {
+            "name": "Grant Writing",
+            "type": "skill",
+            "id": "skill_Grant_Writing"
+        },
+        {
+            "name": "Materials Characterization",
+            "type": "skill",
+            "id": "skill_Materials_Characterization"
+        },
+        {
+            "type": "project",
+            "id": "proj2"
+        },
+        {
+            "institution": "Cambridge University",
+            "degree": "PhD",
+            "field": "Chemistry",
+            "type": "education",
+            "id": "edu_Cambridge_University"
+        },
+        {
+            "name": "Materials Science",
+            "type": "expertise",
+            "id": "expertise_Materials_Science"
+        },
+        {
+            "name": "Nanotechnology",
+            "type": "expertise",
+            "id": "expertise_Nanotechnology"
+        },
+        {
+            "name": "Green Chemistry",
+            "type": "expertise",
+            "id": "expertise_Green_Chemistry"
+        },
+        {
+            "id": "r3",
+            "type": "researcher",
+            "name": "Dr. Emily Carter",
+            "title": "Assistant Professor",
+            "institution": "Harvard University",
+            "department": "Physics",
+            "expertise": [
+                "Quantum Mechanics",
+                "Optics",
+                "Photonics"
+            ],
+            "skills": [
+                "MATLAB",
+                "Python",
+                "Simulation Design"
+            ],
+            "publications": [
+                "p6",
+                "p7"
+            ],
+            "patents": [
+                "pat4"
+            ],
+            "projectHistory": [
+                "proj4"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Physics",
+                    "institution": "Harvard University",
+                    "year": 2015
+                }
+            ],
+            "availability": "Full-time teaching and research",
+            "location": "Cambridge, MA",
+            "languages": [
+                "English",
+                "French"
+            ]
+        },
+        {
+            "name": "Harvard University",
+            "type": "institution",
+            "id": "inst_Harvard_University"
+        },
+        {
+            "type": "patent",
+            "id": "pat4"
+        },
+        {
+            "name": "MATLAB",
+            "type": "skill",
+            "id": "skill_MATLAB"
+        },
+        {
+            "name": "Simulation Design",
+            "type": "skill",
+            "id": "skill_Simulation_Design"
+        },
+        {
+            "type": "project",
+            "id": "proj4"
+        },
+        {
+            "institution": "Harvard University",
+            "degree": "PhD",
+            "field": "Physics",
+            "type": "education",
+            "id": "edu_Harvard_University"
+        },
+        {
+            "name": "Quantum Mechanics",
+            "type": "expertise",
+            "id": "expertise_Quantum_Mechanics"
+        },
+        {
+            "name": "Optics",
+            "type": "expertise",
+            "id": "expertise_Optics"
+        },
+        {
+            "name": "Photonics",
+            "type": "expertise",
+            "id": "expertise_Photonics"
+        },
+        {
+            "id": "r4",
+            "type": "researcher",
+            "name": "Dr. Jason Lee",
+            "title": "Data Scientist",
+            "institution": "Google Research",
+            "department": "AI Research",
+            "expertise": [
+                "Data Science",
+                "Big Data Analytics",
+                "Machine Learning"
+            ],
+            "skills": [
+                "Python",
+                "SQL",
+                "TensorFlow",
+                "Cloud Computing"
+            ],
+            "publications": [
+                "p8",
+                "p9"
+            ],
+            "patents": [
+                "pat5"
+            ],
+            "projectHistory": [
+                "proj5"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Data Science",
+                    "institution": "UC Berkeley",
+                    "year": 2017
+                }
+            ],
+            "availability": "Part-time collaboration",
+            "location": "Mountain View, CA",
+            "languages": [
+                "English",
+                "Korean"
+            ]
+        },
+        {
+            "name": "Google Research",
+            "type": "institution",
+            "id": "inst_Google_Research"
+        },
+        {
+            "type": "patent",
+            "id": "pat5"
+        },
+        {
+            "name": "SQL",
+            "type": "skill",
+            "id": "skill_SQL"
+        },
+        {
+            "name": "Cloud Computing",
+            "type": "skill",
+            "id": "skill_Cloud_Computing"
+        },
+        {
+            "type": "project",
+            "id": "proj5"
+        },
+        {
+            "institution": "UC Berkeley",
+            "degree": "PhD",
+            "field": "Data Science",
+            "type": "education",
+            "id": "edu_UC_Berkeley"
+        },
+        {
+            "name": "Data Science",
+            "type": "expertise",
+            "id": "expertise_Data_Science"
+        },
+        {
+            "name": "Big Data Analytics",
+            "type": "expertise",
+            "id": "expertise_Big_Data_Analytics"
+        },
+        {
+            "id": "r5",
+            "type": "researcher",
+            "name": "Dr. Olivia Brown",
+            "title": "Senior Biologist",
+            "institution": "National Institutes of Health",
+            "department": "Biotechnology",
+            "expertise": [
+                "Gene Editing",
+                "CRISPR",
+                "Synthetic Biology"
+            ],
+            "skills": [
+                "Lab Management",
+                "DNA Sequencing",
+                "Data Analysis"
+            ],
+            "publications": [
+                "p10",
+                "p11"
+            ],
+            "patents": [
+                "pat6"
+            ],
+            "projectHistory": [
+                "proj6"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Biotechnology",
+                    "institution": "Johns Hopkins University",
+                    "year": 2016
+                }
+            ],
+            "availability": "Full-time research",
+            "location": "Bethesda, MD",
+            "languages": [
+                "English",
+                "Spanish"
+            ]
+        },
+        {
+            "name": "National Institutes of Health",
+            "type": "institution",
+            "id": "inst_National_Institutes_of_Health"
+        },
+        {
+            "type": "patent",
+            "id": "pat6"
+        },
+        {
+            "name": "DNA Sequencing",
+            "type": "skill",
+            "id": "skill_DNA_Sequencing"
+        },
+        {
+            "name": "Data Analysis",
+            "type": "skill",
+            "id": "skill_Data_Analysis"
+        },
+        {
+            "type": "project",
+            "id": "proj6"
+        },
+        {
+            "institution": "Johns Hopkins University",
+            "degree": "PhD",
+            "field": "Biotechnology",
+            "type": "education",
+            "id": "edu_Johns_Hopkins_University"
+        },
+        {
+            "name": "Gene Editing",
+            "type": "expertise",
+            "id": "expertise_Gene_Editing"
+        },
+        {
+            "name": "CRISPR",
+            "type": "expertise",
+            "id": "expertise_CRISPR"
+        },
+        {
+            "name": "Synthetic Biology",
+            "type": "expertise",
+            "id": "expertise_Synthetic_Biology"
+        },
+        {
+            "id": "r6",
+            "type": "researcher",
+            "name": "Dr. Maria Santos",
+            "title": "AI Research Scientist",
+            "institution": "Stanford University",
+            "department": "Computer Science",
+            "expertise": [
+                "Machine Learning",
+                "Computer Vision",
+                "Natural Language Processing"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "PyTorch",
+                "Deep Learning"
+            ],
+            "publications": [
+                "p15",
+                "p16",
+                "p17"
+            ],
+            "patents": [
+                "pat9"
+            ],
+            "projectHistory": [
+                "proj10",
+                "proj11"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Computer Science",
+                    "institution": "UC Berkeley",
+                    "year": 2019
+                }
+            ],
+            "availability": "Full-time research",
+            "location": "San Francisco, CA"
+        },
+        {
+            "type": "patent",
+            "id": "pat9"
+        },
+        {
+            "name": "Deep Learning",
+            "type": "skill",
+            "id": "skill_Deep_Learning"
+        },
+        {
+            "type": "project",
+            "id": "proj10"
+        },
+        {
+            "type": "project",
+            "id": "proj11"
+        },
+        {
+            "name": "Natural Language Processing",
+            "type": "expertise",
+            "id": "expertise_Natural_Language_Processing"
+        },
+        {
+            "id": "r11",
+            "type": "researcher",
+            "name": "Dr. John Miller",
+            "title": "AI Specialist",
+            "institution": "Google Research",
+            "department": "AI Research",
+            "expertise": [
+                "Machine Learning",
+                "Natural Language Processing",
+                "Computer Vision"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "Cloud Computing"
+            ],
+            "publications": [
+                "p28",
+                "p29"
+            ],
+            "patents": [
+                "pat15"
+            ],
+            "projectHistory": [
+                "proj1",
+                "proj11"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Computer Science",
+                    "institution": "MIT",
+                    "year": 2020
+                }
+            ],
+            "availability": "Part-time research",
+            "location": "Mountain View, CA",
+            "languages": [
+                "English"
+            ]
+        },
+        {
+            "type": "patent",
+            "id": "pat15"
+        },
+        {
+            "id": "r12",
+            "type": "researcher",
+            "name": "Dr. Anna White",
+            "title": "Biotechnology Engineer",
+            "institution": "National Institutes of Health",
+            "department": "Biotechnology",
+            "expertise": [
+                "Synthetic Biology",
+                "CRISPR",
+                "Gene Editing"
+            ],
+            "skills": [
+                "DNA Sequencing",
+                "Lab Management",
+                "Data Analysis"
+            ],
+            "publications": [
+                "p30",
+                "p31"
+            ],
+            "patents": [
+                "pat16"
+            ],
+            "projectHistory": [
+                "proj6",
+                "proj12"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Biotechnology",
+                    "institution": "Johns Hopkins University",
+                    "year": 2018
+                }
+            ],
+            "availability": "Full-time research",
+            "location": "Bethesda, MD",
+            "languages": [
+                "English",
+                "French"
+            ]
+        },
+        {
+            "type": "patent",
+            "id": "pat16"
+        },
+        {
+            "type": "project",
+            "id": "proj12"
+        },
+        {
+            "id": "r13",
+            "type": "researcher",
+            "name": "Dr. Michael Green",
+            "title": "Materials Scientist",
+            "institution": "ETH Zurich",
+            "department": "Chemistry",
+            "expertise": [
+                "Materials Science",
+                "Nanotechnology",
+                "Green Chemistry"
+            ],
+            "skills": [
+                "Materials Characterization",
+                "Lab Management",
+                "Grant Writing"
+            ],
+            "publications": [
+                "p32",
+                "p33"
+            ],
+            "patents": [
+                "pat17"
+            ],
+            "projectHistory": [
+                "proj2",
+                "proj13"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Materials Science",
+                    "institution": "ETH Zurich",
+                    "year": 2015
+                }
+            ],
+            "availability": "Research consulting",
+            "location": "Zurich, Switzerland",
+            "languages": [
+                "German",
+                "English"
+            ]
+        },
+        {
+            "type": "patent",
+            "id": "pat17"
+        },
+        {
+            "type": "project",
+            "id": "proj13"
+        },
+        {
+            "institution": "ETH Zurich",
+            "degree": "PhD",
+            "field": "Materials Science",
+            "type": "education",
+            "id": "edu_ETH_Zurich"
+        },
+        {
+            "id": "r14",
+            "type": "researcher",
+            "name": "Dr. Rachel Kim",
+            "title": "Quantum Computing Specialist",
+            "institution": "MIT",
+            "department": "Physics",
+            "expertise": [
+                "Quantum Computing",
+                "Quantum Error Correction",
+                "Photonics"
+            ],
+            "skills": [
+                "Python",
+                "MATLAB",
+                "Circuit Simulation"
+            ],
+            "publications": [
+                "p34",
+                "p35"
+            ],
+            "patents": [
+                "pat18"
+            ],
+            "projectHistory": [
+                "proj4",
+                "proj14"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Physics",
+                    "institution": "Harvard University",
+                    "year": 2017
+                }
+            ],
+            "availability": "Full-time research",
+            "location": "Cambridge, MA",
+            "languages": [
+                "English",
+                "Korean"
+            ]
+        },
+        {
+            "name": "MIT",
+            "type": "institution",
+            "id": "inst_MIT"
+        },
+        {
+            "type": "patent",
+            "id": "pat18"
+        },
+        {
+            "name": "Circuit Simulation",
+            "type": "skill",
+            "id": "skill_Circuit_Simulation"
+        },
+        {
+            "type": "project",
+            "id": "proj14"
+        },
+        {
+            "name": "Quantum Computing",
+            "type": "expertise",
+            "id": "expertise_Quantum_Computing"
+        },
+        {
+            "name": "Quantum Error Correction",
+            "type": "expertise",
+            "id": "expertise_Quantum_Error_Correction"
+        },
+        {
+            "id": "r15",
+            "type": "researcher",
+            "name": "Dr. Sophia Brown",
+            "title": "Robotics Researcher",
+            "institution": "Stanford University",
+            "department": "Computer Science",
+            "expertise": [
+                "Humanoid Robotics",
+                "Machine Learning",
+                "Control Systems"
+            ],
+            "skills": [
+                "Python",
+                "TensorFlow",
+                "Control Theory",
+                "ROS"
+            ],
+            "publications": [
+                "p36",
+                "p37"
+            ],
+            "patents": [
+                "pat19"
+            ],
+            "projectHistory": [
+                "proj5",
+                "proj8"
+            ],
+            "education": [
+                {
+                    "degree": "PhD",
+                    "field": "Robotics",
+                    "institution": "UC Berkeley",
+                    "year": 2019
+                }
+            ],
+            "availability": "Project-based",
+            "location": "San Francisco, CA",
+            "languages": [
+                "English",
+                "Japanese"
+            ]
+        },
+        {
+            "type": "patent",
+            "id": "pat19"
+        },
+        {
+            "name": "Control Theory",
+            "type": "skill",
+            "id": "skill_Control_Theory"
+        },
+        {
+            "name": "ROS",
+            "type": "skill",
+            "id": "skill_ROS"
+        },
+        {
+            "type": "project",
+            "id": "proj8"
+        },
+        {
+            "name": "Humanoid Robotics",
+            "type": "expertise",
+            "id": "expertise_Humanoid_Robotics"
+        },
+        {
+            "name": "Control Systems",
+            "type": "expertise",
+            "id": "expertise_Control_Systems"
+        }
+    ],
+    "links": [
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r1",
+            "target": "inst_Stanford_University"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r1",
+            "target": "pat1"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r1",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r1",
+            "target": "skill_TensorFlow"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r1",
+            "target": "skill_PyTorch"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r1",
+            "target": "skill_Research_Design"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r1",
+            "target": "proj1"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r1",
+            "target": "proj3"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r1",
+            "target": "edu_MIT"
+        },
+        {
+            "relationship_type": "INTERESTED_IN",
+            "source": "r1",
+            "target": "industry_Healthcare"
+        },
+        {
+            "relationship_type": "INTERESTED_IN",
+            "source": "r1",
+            "target": "industry_Robotics"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r1",
+            "target": "expertise_Machine_Learning"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r1",
+            "target": "expertise_Computer_Vision"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r1",
+            "target": "expertise_Neural_Networks"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r2",
+            "target": "inst_ETH_Zurich"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r2",
+            "target": "pat2"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r2",
+            "target": "pat3"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r2",
+            "target": "skill_Lab_Management"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r2",
+            "target": "skill_Grant_Writing"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r2",
+            "target": "skill_Materials_Characterization"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r2",
+            "target": "proj2"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r2",
+            "target": "edu_Cambridge_University"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r2",
+            "target": "expertise_Materials_Science"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r2",
+            "target": "expertise_Nanotechnology"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r2",
+            "target": "expertise_Green_Chemistry"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r3",
+            "target": "inst_Harvard_University"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r3",
+            "target": "pat4"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r3",
+            "target": "skill_MATLAB"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r3",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r3",
+            "target": "skill_Simulation_Design"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r3",
+            "target": "proj4"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r3",
+            "target": "edu_Harvard_University"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r3",
+            "target": "expertise_Quantum_Mechanics"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r3",
+            "target": "expertise_Optics"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r3",
+            "target": "expertise_Photonics"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r4",
+            "target": "inst_Google_Research"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r4",
+            "target": "pat5"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r4",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r4",
+            "target": "skill_SQL"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r4",
+            "target": "skill_TensorFlow"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r4",
+            "target": "skill_Cloud_Computing"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r4",
+            "target": "proj5"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r4",
+            "target": "edu_UC_Berkeley"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r4",
+            "target": "expertise_Data_Science"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r4",
+            "target": "expertise_Big_Data_Analytics"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r4",
+            "target": "expertise_Machine_Learning"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r5",
+            "target": "inst_National_Institutes_of_Health"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r5",
+            "target": "pat6"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r5",
+            "target": "skill_Lab_Management"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r5",
+            "target": "skill_DNA_Sequencing"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r5",
+            "target": "skill_Data_Analysis"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r5",
+            "target": "proj6"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r5",
+            "target": "edu_Johns_Hopkins_University"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r5",
+            "target": "expertise_Gene_Editing"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r5",
+            "target": "expertise_CRISPR"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r5",
+            "target": "expertise_Synthetic_Biology"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r6",
+            "target": "inst_Stanford_University"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r6",
+            "target": "pat9"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r6",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r6",
+            "target": "skill_TensorFlow"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r6",
+            "target": "skill_PyTorch"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r6",
+            "target": "skill_Deep_Learning"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r6",
+            "target": "proj10"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r6",
+            "target": "proj11"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r6",
+            "target": "edu_UC_Berkeley"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r6",
+            "target": "expertise_Machine_Learning"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r6",
+            "target": "expertise_Computer_Vision"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r6",
+            "target": "expertise_Natural_Language_Processing"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r11",
+            "target": "inst_Google_Research"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r11",
+            "target": "pat15"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r11",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r11",
+            "target": "skill_TensorFlow"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r11",
+            "target": "skill_Cloud_Computing"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r11",
+            "target": "proj1"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r11",
+            "target": "proj11"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r11",
+            "target": "edu_MIT"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r11",
+            "target": "expertise_Machine_Learning"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r11",
+            "target": "expertise_Natural_Language_Processing"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r11",
+            "target": "expertise_Computer_Vision"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r12",
+            "target": "inst_National_Institutes_of_Health"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r12",
+            "target": "pat16"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r12",
+            "target": "skill_DNA_Sequencing"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r12",
+            "target": "skill_Lab_Management"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r12",
+            "target": "skill_Data_Analysis"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r12",
+            "target": "proj6"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r12",
+            "target": "proj12"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r12",
+            "target": "edu_Johns_Hopkins_University"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r12",
+            "target": "expertise_Synthetic_Biology"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r12",
+            "target": "expertise_CRISPR"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r12",
+            "target": "expertise_Gene_Editing"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r13",
+            "target": "inst_ETH_Zurich"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r13",
+            "target": "pat17"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r13",
+            "target": "skill_Materials_Characterization"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r13",
+            "target": "skill_Lab_Management"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r13",
+            "target": "skill_Grant_Writing"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r13",
+            "target": "proj2"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r13",
+            "target": "proj13"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r13",
+            "target": "edu_ETH_Zurich"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r13",
+            "target": "expertise_Materials_Science"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r13",
+            "target": "expertise_Nanotechnology"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r13",
+            "target": "expertise_Green_Chemistry"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r14",
+            "target": "inst_MIT"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r14",
+            "target": "pat18"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r14",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r14",
+            "target": "skill_MATLAB"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r14",
+            "target": "skill_Circuit_Simulation"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r14",
+            "target": "proj4"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r14",
+            "target": "proj14"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r14",
+            "target": "edu_Harvard_University"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r14",
+            "target": "expertise_Quantum_Computing"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r14",
+            "target": "expertise_Quantum_Error_Correction"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r14",
+            "target": "expertise_Photonics"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "source": "r15",
+            "target": "inst_Stanford_University"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "source": "r15",
+            "target": "pat19"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r15",
+            "target": "skill_Python"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r15",
+            "target": "skill_TensorFlow"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r15",
+            "target": "skill_Control_Theory"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "source": "r15",
+            "target": "skill_ROS"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r15",
+            "target": "proj5"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "source": "r15",
+            "target": "proj8"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "source": "r15",
+            "target": "edu_UC_Berkeley"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r15",
+            "target": "expertise_Humanoid_Robotics"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r15",
+            "target": "expertise_Machine_Learning"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "source": "r15",
+            "target": "expertise_Control_Systems"
+        }
+    ]
+}
