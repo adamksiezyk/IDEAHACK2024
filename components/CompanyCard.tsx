@@ -1,3 +1,4 @@
+import { Building2 } from "lucide-react";
 import { LocationOn } from "@mui/icons-material";
 import { Chip, Avatar, Typography } from "@mui/material";
 import { Company } from "@/lib/companies";
@@ -8,12 +9,16 @@ export default function CompanyCard({ company }: { company: Company }) {
       {/* Left section with logo and job details */}
       <div className="flex gap-4">
         {/* Company Logo */}
-        <Avatar
-          src={company.logo}
-          variant="rounded"
-          className="w-12 h-12"
-          alt={`${company} logo`}
-        />
+        {company.logo ? (
+          <Avatar
+            src={company.logo}
+            variant="rounded"
+            className="w-12 h-12"
+            alt={`${company} logo`}
+          />
+        ) : (
+          <Building2 className="w-12 h-12" />
+        )}
 
         {/* Job Information */}
         <div className="flex flex-col gap-1">

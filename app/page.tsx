@@ -1,29 +1,26 @@
-import { generateClient } from "aws-amplify/data";
-import type { Schema } from "@/amplify/data/resource";
-import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
-import "@aws-amplify/ui-react/styles.css";
+import { Suspense } from "react";
+import { Companies } from "@/components/Companies";
+import { PaginationSkeleton } from "@/components/Skeleton";
+import { Pagination } from "@/components/Pagination";
+import HERGraph from "@/components/graph";
 
-import Graph from "@/components/graph";
-import { Company, fetchCompanies } from "@/lib/companies";
-import CompanyCard from "@/components/CompanyCard";
-
-Amplify.configure(outputs);
-
-const client = generateClient<Schema>();
-
-export default async function CompaniesBoard() {
-  // Sample data matching the screenshot
-  const companies: Company[] = await fetchCompanies();
+export default async function CompaniesBoard({
+  searchParams,
+}: {
+  searchParams: { page?: string };
+}) {
+  const page = Number(searchParams.page) || 1;
 
   return (
-    <div className="flex p-4">
-      <div className="flex flex-col gap-4 min-w-[800px]">
-        {companies.map((company) => (
-          <CompanyCard key={company.id} company={company} />
-        ))}
+    <div className="flex p-4 min-h-screen">
+      <div className="flex-1">
+        <Suspense fallback={<PaginationSkeleton />}>
+          <Companies page={page} />
+        </Suspense>
       </div>
-      <Graph />
+      <div className="w-[600px]">
+        <HERGraph />
+      </div>
     </div>
   );
 }
