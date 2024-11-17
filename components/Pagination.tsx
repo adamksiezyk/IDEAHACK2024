@@ -33,6 +33,7 @@ export function Pagination({ totalPages }: { totalPages: number }) {
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
           <PaginationItem key={page}>
             <PaginationLink
+              className="bg-transparent"
               href={createPageURL(page)}
               isActive={currentPage === page}
             >

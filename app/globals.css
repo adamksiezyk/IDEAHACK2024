@@ -59,6 +59,11 @@ a {
   }
 }
 
+/* Fixed dark theme */
+html {
+  color-scheme: dark;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
