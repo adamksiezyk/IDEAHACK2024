@@ -837,6 +837,76 @@
             "name": "Control Systems",
             "type": "expertise",
             "id": "expertise_Control_Systems"
+        },
+        {
+            "id": "b1",
+            "type": "business",
+            "name": "Business 1",
+            "industry": "Finance",
+            "location": "UK"
+        },
+        {
+            "id": "b2",
+            "type": "business",
+            "name": "Business 2",
+            "industry": "Biotech",
+            "location": "Germany"
+        },
+        {
+            "id": "b3",
+            "type": "business",
+            "name": "Business 3",
+            "industry": "Finance",
+            "location": "Germany"
+        },
+        {
+            "id": "b4",
+            "type": "business",
+            "name": "Business 4",
+            "industry": "AI",
+            "location": "Germany"
+        },
+        {
+            "id": "b5",
+            "type": "business",
+            "name": "Business 5",
+            "industry": "Finance",
+            "location": "UK"
+        },
+        {
+            "id": "b6",
+            "type": "business",
+            "name": "Business 6",
+            "industry": "Biotech",
+            "location": "UK"
+        },
+        {
+            "id": "b7",
+            "type": "business",
+            "name": "Business 7",
+            "industry": "Finance",
+            "location": "Switzerland"
+        },
+        {
+            "id": "b8",
+            "type": "business",
+            "name": "Business 8",
+            "industry": "Finance",
+            "location": "Japan"
+        },
+        {
+            "id": "b9",
+            "type": "business",
+            "name": "Business 9",
+            "industry": "Energy",
+            "location": "Switzerland"
+        },
+        {
+            "id": "b10",
+            "type": "business",
+            "name": "Business 10",
+            "industry": "AI",
+            "location": "Japan"
         }
     ],
     "links": [
@@ -1459,6 +1529,56 @@
             "relationship_type": "EXPERT_IN",
             "source": "r15",
             "target": "expertise_Control_Systems"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b1",
+            "target": "r1"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b2",
+            "target": "r5"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b3",
+            "target": "r1"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b4",
+            "target": "r5"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b5",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b6",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b7",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b8",
+            "target": "r5"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b9",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "source": "b10",
+            "target": "r13"
         }
     ]
 }
