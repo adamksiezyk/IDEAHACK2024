@@ -1,11 +1,10 @@
-import { defineBackend } from '@aws-amplify/backend';
-import { auth } from './auth/resource.js';
-import { graph } from './graph/resource.js';
-
-import {storage} from './storage/resource.js';
+import { defineBackend } from "@aws-amplify/backend";
+import { auth } from "./auth/resource";
+import { data } from "./data/resource";
+import { storage } from "./storage/resource";
 
 defineBackend({
   auth,
-  graph,
-  storage
+  data,
+  storage,
 });
