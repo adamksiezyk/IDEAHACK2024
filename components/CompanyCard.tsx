@@ -1,19 +1,24 @@
+import { Building2 } from "lucide-react";
 import { LocationOn } from "@mui/icons-material";
 import { Chip, Avatar, Typography } from "@mui/material";
 import { Company } from "@/lib/companies";
 
 export default function CompanyCard({ company }: { company: Company }) {
   return (
-    <div className="flex items-center justify-between w-full max-w-3xl bg-zinc-900 rounded-lg p-4 hover:bg-zinc-800 transition-colors">
+    <div className="flex items-center justify-between w-full max-w-3xl bg-[#2c2c2c] rounded-lg p-4 hover:bg-zinc-800 transition-colors">
       {/* Left section with logo and job details */}
       <div className="flex gap-4">
         {/* Company Logo */}
-        <Avatar
-          src={company.logo}
-          variant="rounded"
-          className="w-12 h-12"
-          alt={`${company} logo`}
-        />
+        {company.logo ? (
+          <Avatar
+            src={company.logo}
+            variant="rounded"
+            className="w-12 h-12"
+            alt={`${company} logo`}
+          />
+        ) : (
+          <Building2 className="w-12 h-12" />
+        )}
 
         {/* Job Information */}
         <div className="flex flex-col gap-1">
@@ -75,7 +80,7 @@ export default function CompanyCard({ company }: { company: Company }) {
               <Chip
                 key={area}
                 label={area}
-                className="!bg-zinc-800 !text-gray-300"
+                className="!bg-[#111111] !text-gray-300"
                 size="small"
               />
             ))}
@@ -91,7 +96,7 @@ export default function CompanyCard({ company }: { company: Company }) {
         <Chip
           label={company.stage}
           size="small"
-          className="!bg-zinc-800 !text-gray-300"
+          className="!bg-[#111111] !text-gray-300"
         />
       </div>
     </div>
