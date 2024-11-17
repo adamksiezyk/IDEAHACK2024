@@ -4,7 +4,7 @@ import "@aws-amplify/ui-react/styles.css";
 
 import React, { useState, useEffect } from "react";
 import CytoscapeComponent from "react-cytoscapejs";
-import { Box, Slider, Typography } from "@mui/material";
+import { Box, Typography, Slider } from "@mui/material";
 
 const elements = [
   { data: { id: "specialNode", label: "Special Node", distance: 0 }, position: { x: 250, y: 250 } },
@@ -13,16 +13,33 @@ const elements = [
   { data: { id: "sk2", label: "Skill B", distance: 3 } },
   { data: { id: "p1", label: "Problem X", distance: 1 } },
   { data: { id: "b1", label: "Business Y", distance: 2 } },
-  { data: { source: "s1", target: "specialNode", label: "HAS_SKILL", distance: 1 } },
-  { data: { source: "s1", target: "p1", label: "WORKS_ON", distance: 1 } },
-  { data: { source: "s2", target: "sk2", label: "HAS_SKILL", distance: 3 } },
-  { data: { source: "s2", target: "b1", label: "COLLABORATES", distance: 2 } },
-  { data: { source: "p1", target: "specialNode", label: "REQUIRES", distance: 1 } },
-  { data: { source: "s1", target: "b1", label: "HAS_SKILL", distance: 2 } },
+  { data: { id: "b2", label: "Business Z", distance: 2 } },
+  { data: { id: "s3", label: "Scientist 3", distance: 3 } },
+  { data: { id: "sk3", label: "Skill C", distance: 3 } },
+  { data: { id: "p2", label: "Problem Y", distance: 2 } },
+  { data: { id: "sk4", label: "Skill D", distance: 4 } },
+
+  // Edges ensuring connection to specialNode
+  { data: { source: "s1", target: "specialNode", label: "HAS_SKILL", distance: 1 } }, // Scientist 1 connected
+  { data: { source: "s1", target: "p1", label: "WORKS_ON", distance: 1 } }, // Problem X connected to Scientist 1
+  { data: { source: "p1", target: "specialNode", label: "REQUIRES", distance: 1 } }, // Problem X connected to Special Node
+  { data: { source: "s2", target: "sk2", label: "HAS_SKILL", distance: 3 } }, // Scientist 2 connected to Skill B
+  { data: { source: "sk2", target: "specialNode", label: "LINKED_TO", distance: 3 } }, // Skill B connected to Special Node
+  { data: { source: "s2", target: "b1", label: "COLLABORATES", distance: 2 } }, // Scientist 2 connected to Business Y
+  { data: { source: "b1", target: "specialNode", label: "SUPPORTS", distance: 2 } }, // Business Y connected to Special Node
+  { data: { source: "s3", target: "sk3", label: "HAS_SKILL", distance: 3 } }, // Scientist 3 connected to Skill C
+  { data: { source: "sk3", target: "specialNode", label: "USED_BY", distance: 3 } }, // Skill C connected to Special Node
+  { data: { source: "s3", target: "p2", label: "SOLVES", distance: 3 } }, // Scientist 3 connected to Problem Y
+  { data: { source: "p2", target: "specialNode", label: "LINKED_TO", distance: 2 } }, // Problem Y connected to Special Node
+  { data: { source: "b2", target: "s2", label: "WORKS_WITH", distance: 2 } }, // Business Z connected to Scientist 2
+  { data: { source: "b2", target: "specialNode", label: "COLLABORATES_WITH", distance: 2 } }, // Business Z connected to Special Node
+  { data: { source: "b1", target: "sk4", label: "REQUIRES", distance: 4 } }, // Business Y connected to Skill D
+  { data: { source: "sk4", target: "specialNode", label: "USED_BY", distance: 4 } }, // Skill D connected to Special Node
 ];
 
+
 export default function HERGraph() {
-  const [maxDistance, setMaxDistance] = useState(2);
+  const [maxDistance, setMaxDistance] = useState(1);
   const [cyInstance, setCyInstance] = useState<any>(null);
 
   const handleSliderChange = (_event: Event, newValue: number | number[]) => {
@@ -57,10 +74,12 @@ export default function HERGraph() {
   // Center the specialNode in the viewport whenever the graph updates
   useEffect(() => {
     if (cyInstance) {
-      const specialNode = cyInstance.getElementById("specialNode");
+      const specialNode = cyInstance.getElementById("specialNode");  
+      
       if (specialNode) {
         cyInstance.center(specialNode);
       }
+
     }
   }, [cyInstance, filteredElements]);
 
@@ -70,24 +89,23 @@ export default function HERGraph() {
       <CytoscapeComponent
         elements={filteredElements}
         style={{
-          width: "1000px",
+          width: "100%",
           height: "80vh",
-          border: "1px solid #ccc",
         }}
         layout={{
-          name: "cose", // Force-directed layout
-          animate: true,
-          animationDuration: 3000, // Slower animation (2 seconds)
-          animationEasing: "ease-in-out", // Smooth easing
+          name: "cose",
+          animate: true, // Enable animation
+          animationDuration: 3000, // 3-second animation
+          animationEasing: "ease-in-out",
+          fit: true,
+          padding: 30, // Add padding for a smoother layout
+          randomize: false, // Disable random initial positions for nodes
+          idealEdgeLength: 200, // Increase ideal edge length for smoother layout
           edgeElasticity: (edge) => {
             // Use distance to set edge elasticity
-            return edge.data("distance") * 30; // Adjust multiplier as needed
-          },
-          randomize: false, // Disable random initial positions for nodes
-          idealEdgeLength: 100, // Increase ideal edge length for smoother layout
-          nodeRepulsion: 160, // Increase node repulsion for less overlap
-          numIter: 500, // Increase iterations for stability
-
+            return edge.data("distance") * 200; // Adjust multiplier as needed
+                    },          nodeRepulsion: 8000, // Increase node repulsion for less overlap
+          numIter: 2000, // Increase iterations for stability
         }}
         cy={(cy) => {
           setCyInstance(cy); // Store the Cytoscape instance for viewport manipulation
@@ -107,7 +125,6 @@ export default function HERGraph() {
               "border-color": "#333333",
               "width": 60,
               "height": 60,
-              
             },
           },
           {
@@ -140,20 +157,33 @@ export default function HERGraph() {
       />
 
       {/* Slider */}
-      <Box mt={4} px={2}>
-        <Typography gutterBottom>Max Distance: {maxDistance}</Typography>
+      <Box mt={4} p={4} px={8}>
+        <Typography gutterBottom>Access Level</Typography>
         <Slider
           value={maxDistance}
           min={1}
-          max={3}
+          max={10} // Allow values up to 10
           step={1}
           onChange={handleSliderChange}
           valueLabelDisplay="auto"
           marks={[
-            { value: 1, label: "1" },
-            { value: 2, label: "2" },
-            { value: 3, label: "3" },
+            { value: 1, label: "Free" },
+            { value: 2, label: "Verified" },
+            { value: 3, label: "Premium" },
           ]}
+          sx={{
+            "& .MuiSlider-track": {
+              background: maxDistance < 3 ? "#3391fd" : "#e53935", // Blue for Free/Verified, Red for Premium and above
+            },
+            "& .MuiSlider-thumb": {
+              background: maxDistance < 3 ? "#3391fd" : "#e53935", // Thumb matches section color
+            },
+            "& .MuiSlider-markLabel": {
+              fontSize: "12px",
+              fontWeight: "bold",
+              color: "white",
+            },
+          }}
         />
       </Box>
     </Box>

@@ -7,6 +7,8 @@ import "@aws-amplify/ui-react/styles.css";
 import Graph from "@/components/graph";
 import { Company, fetchCompanies } from "@/lib/companies";
 import CompanyCard from "@/components/CompanyCard";
+import AppBar from "@mui/material/AppBar";
+import Typography from "@mui/material/Typography";
 
 Amplify.configure(outputs);
 
@@ -17,13 +19,17 @@ export default async function CompaniesBoard() {
   const companies: Company[] = await fetchCompanies();
 
   return (
-    <div className="flex p-4">
-      <div className="flex flex-col gap-4 min-w-[800px]">
+    <main>
+
+    <div className="flex">
+      <div className="flex p-4 flex-col gap-4 min-w-[800px]">
         {companies.map((company) => (
           <CompanyCard key={company.id} company={company} />
         ))}
       </div>
-      <Graph />
-    </div>
+      <div className="graph-container mt-4">
+        <Graph />
+      </div>
+    </div></main>
   );
 }
