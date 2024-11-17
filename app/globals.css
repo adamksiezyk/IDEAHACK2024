@@ -62,8 +62,8 @@ a {
 .graph-container {
   background: #151517;
   border-top-left-radius: 20px;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 /* Fixed dark theme */
 html {

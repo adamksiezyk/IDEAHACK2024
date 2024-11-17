@@ -7,7 +7,7 @@ import AppBar from "@mui/material/AppBar";
 
 export default async function CompaniesBoard() {
   return (
-    <>
+    <main>
       <Navbar />
       <div className="flex min-h-screen">
         <div className="flex-1 p-4">
@@ -15,11 +15,10 @@ export default async function CompaniesBoard() {
             <CompaniesList />
           </Suspense>
         </div>
-        <div className="w-[600px]">
+        <div className="mt-4 graph-container">
           <HERGraph />
         </div>
       </div>
-      <Graph />
-    </div>
+    </main>
   );
 }

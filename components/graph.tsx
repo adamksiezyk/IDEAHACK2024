@@ -7,35 +7,198 @@ import CytoscapeComponent from "react-cytoscapejs";
 import { Box, Typography, Slider } from "@mui/material";
 
 const elements = [
-  { data: { id: "specialNode", label: "Special Node", distance: 0 }, position: { x: 250, y: 250 } },
-  { data: { id: "s1", label: "Scientist 1", distance: 1 } },
-  { data: { id: "s2", label: "Scientist 2", distance: 2 } },
-  { data: { id: "sk2", label: "Skill B", distance: 3 } },
-  { data: { id: "p1", label: "Problem X", distance: 1 } },
-  { data: { id: "b1", label: "Business Y", distance: 2 } },
-  { data: { id: "b2", label: "Business Z", distance: 2 } },
-  { data: { id: "s3", label: "Scientist 3", distance: 3 } },
-  { data: { id: "sk3", label: "Skill C", distance: 3 } },
-  { data: { id: "p2", label: "Problem Y", distance: 2 } },
-  { data: { id: "sk4", label: "Skill D", distance: 4 } },
+  // Researchers
+  {
+    data: {
+      id: "r3",
+      label: "Dr. Emily Carter",
+      type: "researcher",
+      institution: "Harvard University",
+      department: "Physics",
+      skills: ["MATLAB", "Python", "Simulation Design"],
+      distance: 0,
+    },
+  },
+  {
+    data: {
+      id: "r6",
+      label: "Dr. Maria Santos",
+      type: "researcher",
+      institution: "Stanford University",
+      department: "Computer Science",
+      skills: ["Python", "TensorFlow", "PyTorch", "Deep Learning"],
+      distance: 3,
+    },
+  },
+  {
+    data: {
+      id: "r14",
+      label: "Dr. Rachel Kim",
+      type: "researcher",
+      institution: "MIT",
+      department: "Physics",
+      skills: ["Python", "MATLAB", "Circuit Simulation"],
+      distance: 5,
+    },
+  },
+  {
+    data: {
+      id: "r15",
+      label: "Dr. Sophia Brown",
+      type: "researcher",
+      institution: "Stanford University",
+      department: "Computer Science",
+      skills: ["Python", "TensorFlow", "Control Theory", "ROS"],
+      distance: 3,
+    },
+  },
+  {
+    data: {
+      id: "r1",
+      label: "Dr. Sarah Chen",
+      type: "researcher",
+      institution: "Stanford University",
+      department: "Computer Science",
+      skills: ["Python", "TensorFlow", "PyTorch", "Research Design"],
+      distance: 2,
+    },
+  },
+  {
+    data: {
+      id: "r20",
+      label: "Dr. Alan Turing",
+      type: "researcher",
+      institution: "Cambridge University",
+      department: "Mathematics",
+      skills: ["Cryptography", "Algorithms", "Artificial Intelligence"],
+      distance: 5,
+    },
+  },
 
-  // Edges ensuring connection to specialNode
-  { data: { source: "s1", target: "specialNode", label: "HAS_SKILL", distance: 1 } }, // Scientist 1 connected
-  { data: { source: "s1", target: "p1", label: "WORKS_ON", distance: 1 } }, // Problem X connected to Scientist 1
-  { data: { source: "p1", target: "specialNode", label: "REQUIRES", distance: 1 } }, // Problem X connected to Special Node
-  { data: { source: "s2", target: "sk2", label: "HAS_SKILL", distance: 3 } }, // Scientist 2 connected to Skill B
-  { data: { source: "sk2", target: "specialNode", label: "LINKED_TO", distance: 3 } }, // Skill B connected to Special Node
-  { data: { source: "s2", target: "b1", label: "COLLABORATES", distance: 2 } }, // Scientist 2 connected to Business Y
-  { data: { source: "b1", target: "specialNode", label: "SUPPORTS", distance: 2 } }, // Business Y connected to Special Node
-  { data: { source: "s3", target: "sk3", label: "HAS_SKILL", distance: 3 } }, // Scientist 3 connected to Skill C
-  { data: { source: "sk3", target: "specialNode", label: "USED_BY", distance: 3 } }, // Skill C connected to Special Node
-  { data: { source: "s3", target: "p2", label: "SOLVES", distance: 3 } }, // Scientist 3 connected to Problem Y
-  { data: { source: "p2", target: "specialNode", label: "LINKED_TO", distance: 2 } }, // Problem Y connected to Special Node
-  { data: { source: "b2", target: "s2", label: "WORKS_WITH", distance: 2 } }, // Business Z connected to Scientist 2
-  { data: { source: "b2", target: "specialNode", label: "COLLABORATES_WITH", distance: 2 } }, // Business Z connected to Special Node
-  { data: { source: "b1", target: "sk4", label: "REQUIRES", distance: 4 } }, // Business Y connected to Skill D
-  { data: { source: "sk4", target: "specialNode", label: "USED_BY", distance: 4 } }, // Skill D connected to Special Node
+  // Skills
+  {
+    data: {
+      id: "skill_Python",
+      label: "Python",
+      type: "skill",
+      distance: 1,
+    },
+  },
+  {
+    data: {
+      id: "skill_AI",
+      label: "Artificial Intelligence",
+      type: "skill",
+      distance: 3,
+    },
+  },
+  {
+    data: {
+      id: "skill_ControlTheory",
+      label: "Control Theory",
+      type: "skill",
+      distance: 4,
+    },
+  },
+
+  // Problems
+  {
+    data: {
+      id: "p1",
+      label: "Optimize AI Models",
+      type: "problem",
+      distance: 2,
+    },
+  },
+  {
+    data: {
+      id: "p2",
+      label: "Design Quantum Circuits",
+      type: "problem",
+      distance: 5,
+    },
+  },
+  {
+    data: {
+      id: "p3",
+      label: "Develop Autonomous Navigation",
+      type: "problem",
+      distance: 4,
+    },
+  },
+  {
+    data: {
+      id: "p4",
+      label: "Secure Cryptographic Systems",
+      type: "problem",
+      distance: 5,
+    },
+  },
+
+  // Businesses
+  {
+    data: {
+      id: "b1",
+      label: "Tech Innovations LLC",
+      type: "business",
+      distance: 4,
+    },
+  },
+  {
+    data: {
+      id: "b2",
+      label: "Quantum Solutions Inc.",
+      type: "business",
+      distance: 5,
+    },
+  },
+  {
+    data: {
+      id: "b3",
+      label: "AI Pioneers Inc.",
+      type: "business",
+      distance: 3,
+    },
+  },
+  {
+    data: {
+      id: "b4",
+      label: "Crypto Secure Ltd.",
+      type: "business",
+      distance: 6,
+    },
+  },
+
+  // Relationships: Skills
+  { data: { source: "r3", target: "skill_Python", label: "HAS_SKILL", distance: 2 } },
+  { data: { source: "r6", target: "skill_Python", label: "HAS_SKILL", distance: 3 } },
+  { data: { source: "r14", target: "skill_Python", label: "HAS_SKILL", distance: 4 } },
+  { data: { source: "r20", target: "skill_AI", label: "HAS_SKILL", distance: 3 } },
+  { data: { source: "r15", target: "skill_ControlTheory", label: "HAS_SKILL", distance: 3 } },
+
+  // New Relationships: Skills to Skills
+  { data: { source: "skill_Python", target: "skill_AI", label: "SUPPORTS", distance: 2 } },
+
+  // Relationships: Problems to Skills/Scientists
+  { data: { source: "p1", target: "skill_AI", label: "REQUIRES", distance: 2 } },
+  { data: { source: "p2", target: "r14", label: "CAN_SOLVE", distance: 3 } },
+  { data: { source: "p3", target: "skill_ControlTheory", label: "REQUIRES", distance: 4 } },
+  { data: { source: "p4", target: "r20", label: "CAN_SOLVE", distance: 5 } },
+
+  // New Relationships: Problems to Problems
+  { data: { source: "p4", target: "p2", label: "RELATED_TO", distance: 4 } },
+
+  // Relationships: Businesses to Problems
+  { data: { source: "b1", target: "p1", label: "OWNS", distance: 4 } },
+  { data: { source: "b2", target: "p2", label: "OWNS", distance: 5 } },
+  { data: { source: "b3", target: "p3", label: "OWNS", distance: 4 } },
+  { data: { source: "b4", target: "p4", label: "OWNS", distance: 6 } },
+
+  // New Relationships: Researchers to Skills
+  { data: { source: "r15", target: "skill_AI", label: "EXPERT_IN", distance: 3 } },
 ];
+
+
 
 
 export default function HERGraph() {
@@ -53,7 +216,7 @@ export default function HERGraph() {
     const visibleEdges = elements.filter((element) => {
       if (element.data?.source && element.data?.target) {
         // Include edge if it meets the maxDistance criteria
-        if (element.data.distance <= maxDistance) {
+        if (element.data.distance - 1  <= maxDistance) {
           visibleNodes.add(element.data.source);
           visibleNodes.add(element.data.target);
           return true;
@@ -65,7 +228,7 @@ export default function HERGraph() {
 
     const visibleNodesElements = elements.filter((element) => {
       // Include node if it's in the visibleNodes set
-      return element.data?.id && visibleNodes.has(element.data.id);
+      return element.data?.id && visibleNodes.has(element.data.id );
     });
 
     return [...visibleNodesElements, ...visibleEdges];
@@ -74,7 +237,7 @@ export default function HERGraph() {
   // Center the specialNode in the viewport whenever the graph updates
   useEffect(() => {
     if (cyInstance) {
-      const specialNode = cyInstance.getElementById("specialNode");  
+      const specialNode = cyInstance.getElementById("r3");  
       
       if (specialNode) {
         cyInstance.center(specialNode);
@@ -89,8 +252,7 @@ export default function HERGraph() {
       <CytoscapeComponent
         elements={filteredElements}
         style={{
-          width: "100%",
-          height: "80vh",
+          height: "75vh",
         }}
         layout={{
           name: "cose",
@@ -100,7 +262,8 @@ export default function HERGraph() {
           fit: true,
           padding: 30, // Add padding for a smoother layout
           randomize: false, // Disable random initial positions for nodes
-          idealEdgeLength: 200, // Increase ideal edge length for smoother layout
+          idealEdgeLength: (edge) => 200, // Increase ideal edge length for smoother layout
+          
           edgeElasticity: (edge) => {
             // Use distance to set edge elasticity
             return edge.data("distance") * 200; // Adjust multiplier as needed
@@ -109,8 +272,9 @@ export default function HERGraph() {
         }}
         cy={(cy) => {
           setCyInstance(cy); // Store the Cytoscape instance for viewport manipulation
-          cy.minZoom(0.5);
+          cy.minZoom(0.75);
           cy.maxZoom(2);
+
         }}
         stylesheet={[
           {
@@ -128,9 +292,9 @@ export default function HERGraph() {
             },
           },
           {
-            selector: "node[id = 'specialNode']",
+            selector: "node[id = 'r3']",
             style: {
-              "background-color": "#fafafa",
+              "background-color": "#3391fd",
               "border-width": 4,
               "border-color": "#3391fd",
               "border-style": "solid",
@@ -157,12 +321,14 @@ export default function HERGraph() {
       />
 
       {/* Slider */}
-      <Box mt={4} p={4} px={8}>
-        <Typography gutterBottom>Access Level</Typography>
-        <Slider
+      <Box  p={4}  borderTop={"1px solid #5a755D"}>
+        <Typography gutterBottom>Similarity</Typography>
+        <Box  p={2} >
+          <Slider
+         
           value={maxDistance}
           min={1}
-          max={10} // Allow values up to 10
+          max={7} // Allow values up to 10
           step={1}
           onChange={handleSliderChange}
           valueLabelDisplay="auto"
@@ -184,7 +350,7 @@ export default function HERGraph() {
               color: "white",
             },
           }}
-        />
+        /></Box>
       </Box>
     </Box>
   );
