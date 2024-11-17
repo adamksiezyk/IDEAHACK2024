@@ -24,7 +24,7 @@ export interface Challenge {
   requiredExpertise: string[];
 }
 
-const COMPANIES = [
+export const COMPANIES = [
   {
     id: "b1",
     name: "GreenTech Solutions",
