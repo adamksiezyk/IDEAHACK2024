@@ -78,7 +78,7 @@ export default function HERGraph() {
     const visibleEdges = elements.filter((element) => {
       if (element.data?.source && element.data?.target) {
         // Include edge if it meets the maxDistance criteria
-        if (element.data.distance - 1  <= maxDistance) {
+        if (element.data.distance - 1 <= maxDistance) {
           visibleNodes.add(element.data.source);
           visibleNodes.add(element.data.target);
           return true;
@@ -90,7 +90,7 @@ export default function HERGraph() {
 
     const visibleNodesElements = elements.filter((element) => {
       // Include node if it's in the visibleNodes set
-      return element.data?.id && visibleNodes.has(element.data.id );
+      return element.data?.id && visibleNodes.has(element.data.id);
     });
 
     return [...visibleNodesElements, ...visibleEdges];
@@ -99,12 +99,11 @@ export default function HERGraph() {
   // Center the specialNode in the viewport whenever the graph updates
   useEffect(() => {
     if (cyInstance) {
-      const specialNode = cyInstance.getElementById("r3");  
-      
+      const specialNode = cyInstance.getElementById("r3");
+
       if (specialNode) {
         cyInstance.center(specialNode);
       }
-
     }
   }, [cyInstance, filteredElements]);
 
@@ -125,18 +124,18 @@ export default function HERGraph() {
           padding: 30, // Add padding for a smoother layout
           randomize: false, // Disable random initial positions for nodes
           idealEdgeLength: (edge) => 200, // Increase ideal edge length for smoother layout
-          
+
           edgeElasticity: (edge) => {
             // Use distance to set edge elasticity
             return edge.data("distance") * 200; // Adjust multiplier as needed
-                    },          nodeRepulsion: 8000, // Increase node repulsion for less overlap
+          },
+          nodeRepulsion: (edge) => 8000, // Increase node repulsion for less overlap
           numIter: 2000, // Increase iterations for stability
         }}
         cy={(cy) => {
           setCyInstance(cy); // Store the Cytoscape instance for viewport manipulation
           cy.minZoom(0.75);
           cy.maxZoom(2);
-
         }}
         stylesheet={[
           {
@@ -149,8 +148,8 @@ export default function HERGraph() {
               "text-margin-y": 10, // Adjust label position below the node
               "border-width": 2,
               "border-color": "#333333",
-              "width": 60,
-              "height": 60,
+              width: 60,
+              height: 60,
             },
           },
           {
@@ -160,8 +159,8 @@ export default function HERGraph() {
               "border-width": 4,
               "border-color": "#3391fd",
               "border-style": "solid",
-              "width": 80,
-              "height": 80,
+              width: 80,
+              height: 80,
             },
           },
           {
@@ -183,36 +182,36 @@ export default function HERGraph() {
       />
 
       {/* Slider */}
-      <Box  p={4}  borderTop={"1px solid #5a755D"}>
+      <Box p={4} borderTop={"1px solid #5a755D"}>
         <Typography gutterBottom>Similarity</Typography>
-        <Box  p={2} >
+        <Box p={2}>
           <Slider
-         
-          value={maxDistance}
-          min={1}
-          max={7} // Allow values up to 10
-          step={1}
-          onChange={handleSliderChange}
-          valueLabelDisplay="auto"
-          marks={[
-            { value: 1, label: "Free" },
-            { value: 2, label: "Verified" },
-            { value: 3, label: "Premium" },
-          ]}
-          sx={{
-            "& .MuiSlider-track": {
-              background: maxDistance < 3 ? "#3391fd" : "#e53935", // Blue for Free/Verified, Red for Premium and above
-            },
-            "& .MuiSlider-thumb": {
-              background: maxDistance < 3 ? "#3391fd" : "#e53935", // Thumb matches section color
-            },
-            "& .MuiSlider-markLabel": {
-              fontSize: "12px",
-              fontWeight: "bold",
-              color: "white",
-            },
-          }}
-        /></Box>
+            value={maxDistance}
+            min={1}
+            max={7} // Allow values up to 10
+            step={1}
+            onChange={handleSliderChange}
+            valueLabelDisplay="auto"
+            marks={[
+              { value: 1, label: "Free" },
+              { value: 2, label: "Verified" },
+              { value: 3, label: "Premium" },
+            ]}
+            sx={{
+              "& .MuiSlider-track": {
+                background: maxDistance < 3 ? "#3391fd" : "#e53935", // Blue for Free/Verified, Red for Premium and above
+              },
+              "& .MuiSlider-thumb": {
+                background: maxDistance < 3 ? "#3391fd" : "#e53935", // Thumb matches section color
+              },
+              "& .MuiSlider-markLabel": {
+                fontSize: "12px",
+                fontWeight: "bold",
+                color: "white",
+              },
+            }}
+          />
+        </Box>
       </Box>
     </Box>
   );
