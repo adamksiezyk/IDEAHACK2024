@@ -9,11 +9,15 @@ frontend:
   phases:
     build:
       commands:
+        - echo "NEXTAUTH_SECRET=$NEXTAUTH_SECRET" >> .env.production
+        - echo "NEXTAUTH_URL=$NEXTAUTH_URL" >> .env.production
+        - echo "ORCID_CLIENT_ID=$ORCID_CLIENT_ID" >> .env.production
+        - echo "ORCID_CLIENT_SECRET=$ORCID_CLIENT_SECRET" >> .env.production
         - npm run build
   artifacts:
     baseDirectory: .next
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - .next/cache/**/*

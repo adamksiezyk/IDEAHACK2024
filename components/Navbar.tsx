@@ -1,7 +1,7 @@
 import React from "react";
 import { Search, MapPin, Moon, Star } from "lucide-react";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<{ userName: string | null | undefined }> = ({ userName }) => {
   return (
     <nav className="bg-[#2c2c2c] text-white">
       <div className="container mx-auto flex items-center justify-between px-4 py-2">
@@ -56,6 +56,7 @@ const Navbar: React.FC = () => {
           <button className="flex items-center bg-[#111111] px-3 py-1 rounded">
             <Star className="w-4 h-4 text-gray-400" />
           </button>
+          {userName && <span className="text-sm">Hello {userName}</span>}
         </div>
       </div>
     </nav>
