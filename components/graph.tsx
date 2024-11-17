@@ -5,205 +5,67 @@ import "@aws-amplify/ui-react/styles.css";
 import React, { useState, useEffect } from "react";
 import CytoscapeComponent from "react-cytoscapejs";
 import { Box, Typography, Slider } from "@mui/material";
+import { downloadData } from 'aws-amplify/storage';
+import { json } from "stream/consumers";
 
-const elements = [
-  // Researchers
-  {
-    data: {
-      id: "r3",
-      label: "Dr. Emily Carter",
-      type: "researcher",
-      institution: "Harvard University",
-      department: "Physics",
-      skills: ["MATLAB", "Python", "Simulation Design"],
-      distance: 0,
-    },
-  },
-  {
-    data: {
-      id: "r6",
-      label: "Dr. Maria Santos",
-      type: "researcher",
-      institution: "Stanford University",
-      department: "Computer Science",
-      skills: ["Python", "TensorFlow", "PyTorch", "Deep Learning"],
-      distance: 3,
-    },
-  },
-  {
-    data: {
-      id: "r14",
-      label: "Dr. Rachel Kim",
-      type: "researcher",
-      institution: "MIT",
-      department: "Physics",
-      skills: ["Python", "MATLAB", "Circuit Simulation"],
-      distance: 5,
-    },
-  },
-  {
-    data: {
-      id: "r15",
-      label: "Dr. Sophia Brown",
-      type: "researcher",
-      institution: "Stanford University",
-      department: "Computer Science",
-      skills: ["Python", "TensorFlow", "Control Theory", "ROS"],
-      distance: 3,
-    },
-  },
-  {
-    data: {
-      id: "r1",
-      label: "Dr. Sarah Chen",
-      type: "researcher",
-      institution: "Stanford University",
-      department: "Computer Science",
-      skills: ["Python", "TensorFlow", "PyTorch", "Research Design"],
-      distance: 2,
-    },
-  },
-  {
-    data: {
-      id: "r20",
-      label: "Dr. Alan Turing",
-      type: "researcher",
-      institution: "Cambridge University",
-      department: "Mathematics",
-      skills: ["Cryptography", "Algorithms", "Artificial Intelligence"],
-      distance: 5,
-    },
-  },
+function transformGraph(graph) {
+  const { nodes, links } = graph;
 
-  // Skills
-  {
-    data: {
-      id: "skill_Python",
-      label: "Python",
-      type: "skill",
-      distance: 1,
-    },
-  },
-  {
-    data: {
-      id: "skill_AI",
-      label: "Artificial Intelligence",
-      type: "skill",
-      distance: 3,
-    },
-  },
-  {
-    data: {
-      id: "skill_ControlTheory",
-      label: "Control Theory",
-      type: "skill",
-      distance: 4,
-    },
-  },
+  // Transform nodes
+  const transformedNodes = nodes.map((node) => {
+    return {
+      data: {
+        id: node.id,
+        label: node.name || node.id, // Use name if available, fallback to id
+        ...node, // Spread all other properties to retain the additional metadata
+      },
+    };
+  });
 
-  // Problems
-  {
-    data: {
-      id: "p1",
-      label: "Optimize AI Models",
-      type: "problem",
-      distance: 2,
-    },
-  },
-  {
-    data: {
-      id: "p2",
-      label: "Design Quantum Circuits",
-      type: "problem",
-      distance: 5,
-    },
-  },
-  {
-    data: {
-      id: "p3",
-      label: "Develop Autonomous Navigation",
-      type: "problem",
-      distance: 4,
-    },
-  },
-  {
-    data: {
-      id: "p4",
-      label: "Secure Cryptographic Systems",
-      type: "problem",
-      distance: 5,
-    },
-  },
+  // Transform links
+  const transformedLinks = links.map((link) => {
+    return {
+      data: {
+        source: link.source,
+        target: link.target,
+        label: link.relationship_type || "RELATIONSHIP", // Use relationship_type or a default
+        ...link, // Spread all other properties to retain additional metadata
+      },
+    };
+  });
 
-  // Businesses
-  {
-    data: {
-      id: "b1",
-      label: "Tech Innovations LLC",
-      type: "business",
-      distance: 4,
-    },
-  },
-  {
-    data: {
-      id: "b2",
-      label: "Quantum Solutions Inc.",
-      type: "business",
-      distance: 5,
-    },
-  },
-  {
-    data: {
-      id: "b3",
-      label: "AI Pioneers Inc.",
-      type: "business",
-      distance: 3,
-    },
-  },
-  {
-    data: {
-      id: "b4",
-      label: "Crypto Secure Ltd.",
-      type: "business",
-      distance: 6,
-    },
-  },
+  // Combine nodes and links into a single elements array
+  return [...transformedNodes, ...transformedLinks];
+}
 
-  // Relationships: Skills
-  { data: { source: "r3", target: "skill_Python", label: "HAS_SKILL", distance: 2 } },
-  { data: { source: "r6", target: "skill_Python", label: "HAS_SKILL", distance: 3 } },
-  { data: { source: "r14", target: "skill_Python", label: "HAS_SKILL", distance: 4 } },
-  { data: { source: "r20", target: "skill_AI", label: "HAS_SKILL", distance: 3 } },
-  { data: { source: "r15", target: "skill_ControlTheory", label: "HAS_SKILL", distance: 3 } },
-
-  // New Relationships: Skills to Skills
-  { data: { source: "skill_Python", target: "skill_AI", label: "SUPPORTS", distance: 2 } },
-
-  // Relationships: Problems to Skills/Scientists
-  { data: { source: "p1", target: "skill_AI", label: "REQUIRES", distance: 2 } },
-  { data: { source: "p2", target: "r14", label: "CAN_SOLVE", distance: 3 } },
-  { data: { source: "p3", target: "skill_ControlTheory", label: "REQUIRES", distance: 4 } },
-  { data: { source: "p4", target: "r20", label: "CAN_SOLVE", distance: 5 } },
-
-  // New Relationships: Problems to Problems
-  { data: { source: "p4", target: "p2", label: "RELATED_TO", distance: 4 } },
-
-  // Relationships: Businesses to Problems
-  { data: { source: "b1", target: "p1", label: "OWNS", distance: 4 } },
-  { data: { source: "b2", target: "p2", label: "OWNS", distance: 5 } },
-  { data: { source: "b3", target: "p3", label: "OWNS", distance: 4 } },
-  { data: { source: "b4", target: "p4", label: "OWNS", distance: 6 } },
-
-  // New Relationships: Researchers to Skills
-  { data: { source: "r15", target: "skill_AI", label: "EXPERT_IN", distance: 3 } },
-];
-
-
+const empty_graph = {
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    // The provided `nodes` array
+  ],
+  "links": [
+    // The provided `links` array
+  ]
+};
 
 
 export default function HERGraph() {
   const [maxDistance, setMaxDistance] = useState(1);
   const [cyInstance, setCyInstance] = useState<any>(null);
+
+
+     const result = downloadData({
+      path: "graphs/realistic_data.json",
+      options: {
+        // Specify a target bucket using name assigned in Amplify Backend
+        bucket: "graph_json_storage"
+      }
+    }).result;
+
+
+  const elements = transformGraph(result);
 
   const handleSliderChange = (_event: Event, newValue: number | number[]) => {
     setMaxDistance(newValue as number);
