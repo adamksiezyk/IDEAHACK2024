@@ -4,7 +4,6 @@
     "graph": {},
     "nodes": [
         {
-            "id": "r1",
             "type": "researcher",
             "name": "Alice Johansson",
             "title": "Senior Research Scientist",
@@ -57,7 +56,8 @@
             "languages": [
                 "English",
                 "Mandarin"
-            ]
+            ],
+            "id": "r1"
         },
         {
             "name": "Stanford University",
@@ -129,7 +129,6 @@
             "id": "expertise_Neural_Networks"
         },
         {
-            "id": "r2",
             "type": "researcher",
             "name": "David M\u00fcller",
             "title": "Professor of Chemistry",
@@ -164,7 +163,8 @@
                 }
             ],
             "availability": "Research consulting",
-            "location": "Zurich, Switzerland"
+            "location": "Zurich, Switzerland",
+            "id": "r2"
         },
         {
             "name": "ETH Zurich",
@@ -221,7 +221,6 @@
             "id": "expertise_Green_Chemistry"
         },
         {
-            "id": "r3",
             "type": "researcher",
             "name": "Emilia Garc\u00eda",
             "title": "Assistant Professor",
@@ -260,7 +259,8 @@
             "languages": [
                 "English",
                 "French"
-            ]
+            ],
+            "id": "r3"
         },
         {
             "name": "Harvard University",
@@ -308,7 +308,6 @@
             "id": "expertise_Photonics"
         },
         {
-            "id": "r4",
             "type": "researcher",
             "name": "James Okafor",
             "title": "Data Scientist",
@@ -348,7 +347,8 @@
             "languages": [
                 "English",
                 "Korean"
-            ]
+            ],
+            "id": "r4"
         },
         {
             "name": "Google Research",
@@ -391,7 +391,6 @@
             "id": "expertise_Big_Data_Analytics"
         },
         {
-            "id": "r5",
             "type": "researcher",
             "name": "Olivia Nguyen",
             "title": "Senior Biologist",
@@ -430,7 +429,8 @@
             "languages": [
                 "English",
                 "Spanish"
-            ]
+            ],
+            "id": "r5"
         },
         {
             "name": "National Institutes of Health",
@@ -478,7 +478,6 @@
             "id": "expertise_Synthetic_Biology"
         },
         {
-            "id": "r6",
             "type": "researcher",
             "name": "Maria Santos",
             "title": "AI Research Scientist",
@@ -516,7 +515,8 @@
                 }
             ],
             "availability": "Full-time research",
-            "location": "San Francisco, CA"
+            "location": "San Francisco, CA",
+            "id": "r6"
         },
         {
             "type": "patent",
@@ -541,7 +541,6 @@
             "id": "expertise_Natural_Language_Processing"
         },
         {
-            "id": "r11",
             "type": "researcher",
             "name": "Ethan Patel",
             "title": "AI Specialist",
@@ -580,14 +579,14 @@
             "location": "Mountain View, CA",
             "languages": [
                 "English"
-            ]
+            ],
+            "id": "r11"
         },
         {
             "type": "patent",
             "id": "pat15"
         },
         {
-            "id": "r12",
             "type": "researcher",
             "name": "Hannah Fadilah",
             "title": "Biotechnology Engineer",
@@ -627,7 +626,8 @@
             "languages": [
                 "English",
                 "French"
-            ]
+            ],
+            "id": "r12"
         },
         {
             "type": "patent",
@@ -638,7 +638,6 @@
             "id": "proj12"
         },
         {
-            "id": "r13",
             "type": "researcher",
             "name": "Sofia Borg",
             "title": "Materials Scientist",
@@ -678,7 +677,8 @@
             "languages": [
                 "German",
                 "English"
-            ]
+            ],
+            "id": "r13"
         },
         {
             "type": "patent",
@@ -696,7 +696,6 @@
             "id": "edu_ETH_Zurich"
         },
         {
-            "id": "r14",
             "type": "researcher",
             "name": "Benjamin Rossi",
             "title": "Quantum Computing Specialist",
@@ -736,7 +735,8 @@
             "languages": [
                 "English",
                 "Korean"
-            ]
+            ],
+            "id": "r14"
         },
         {
             "name": "MIT",
@@ -767,7 +767,6 @@
             "id": "expertise_Quantum_Error_Correction"
         },
         {
-            "id": "r15",
             "type": "researcher",
             "name": "Chloe Dubois",
             "title": "Robotics Researcher",
@@ -808,7 +807,8 @@
             "languages": [
                 "English",
                 "Japanese"
-            ]
+            ],
+            "id": "r15"
         },
         {
             "type": "patent",
@@ -839,781 +839,1207 @@
             "id": "expertise_Control_Systems"
         },
         {
-            "id": "b1",
             "type": "business",
             "name": "Bluebird Robotics",
             "industry": "Finance",
-            "location": "UK"
+            "location": "UK",
+            "id": "b1"
         },
         {
-            "id": "b2",
             "type": "business",
             "name": "Evergreen Energy Solutions",
             "industry": "Biotech",
-            "location": "Germany"
+            "location": "Germany",
+            "id": "b2"
         },
         {
-            "id": "b3",
             "type": "business",
             "name": "Nimbus AI",
             "industry": "Finance",
-            "location": "Germany"
+            "location": "Germany",
+            "id": "b3"
         },
         {
-            "id": "b4",
             "type": "business",
             "name": "Quantum Materials, Inc.",
             "industry": "AI",
-            "location": "Germany"
+            "location": "Germany",
+            "id": "b4"
         },
         {
-            "id": "b5",
             "type": "business",
             "name": "GreenLeaf BioTech",
             "industry": "Finance",
-            "location": "UK"
+            "location": "UK",
+            "id": "b5"
         },
         {
-            "id": "b6",
             "type": "business",
             "name": "Oceanic Analytics",
             "industry": "Biotech",
-            "location": "UK"
+            "location": "UK",
+            "id": "b6"
         },
         {
-            "id": "b7",
             "type": "business",
             "name": "PineTree Software",
             "industry": "Finance",
-            "location": "Switzerland"
+            "location": "Switzerland",
+            "id": "b7"
         },
         {
-            "id": "b8",
             "type": "business",
             "name": "Sunbeam Electronics",
             "industry": "Finance",
-            "location": "Japan"
+            "location": "Japan",
+            "id": "b8"
         },
         {
-            "id": "b9",
             "type": "business",
             "name": "Vortex Cybernetics",
             "industry": "Energy",
-            "location": "Switzerland"
+            "location": "Switzerland",
+            "id": "b9"
         },
         {
-            "id": "b10",
             "type": "business",
             "name": "Stellar Dynamics",
             "industry": "AI",
-            "location": "Japan"
+            "location": "Japan",
+            "id": "b10"
+        },
+        {
+            "id": "skill_Quantum_Mechanics"
         }
     ],
     "links": [
         {
             "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.7993425726890564,
+            "distance": 0.2006574273109436,
             "source": "r1",
             "target": "inst_Stanford_University"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9121931791305542,
+            "distance": 0.0878068208694458,
             "source": "r1",
             "target": "pat1"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.6993030309677124,
+            "distance": 0.3006969690322876,
             "source": "r1",
             "target": "skill_Python"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7551211714744568,
+            "distance": 0.2448788285255432,
             "source": "r1",
             "target": "skill_TensorFlow"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8389615416526794,
+            "distance": 0.16103845834732056,
             "source": "r1",
             "target": "skill_PyTorch"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9215582013130188,
+            "distance": 0.0784417986869812,
             "source": "r1",
             "target": "skill_Research_Design"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8231407403945923,
+            "distance": 0.17685925960540771,
             "source": "r1",
             "target": "proj1"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9107256531715393,
+            "distance": 0.0892743468284607,
             "source": "r1",
             "target": "proj3"
         },
         {
             "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.7090809941291809,
+            "distance": 0.2909190058708191,
             "source": "r1",
             "target": "edu_MIT"
         },
         {
             "relationship_type": "INTERESTED_IN",
+            "weight": 1,
+            "score": 0.915509045124054,
+            "distance": 0.08449095487594604,
             "source": "r1",
             "target": "industry_Healthcare"
         },
         {
             "relationship_type": "INTERESTED_IN",
+            "weight": 1,
+            "score": 0.9183327555656433,
+            "distance": 0.08166724443435669,
             "source": "r1",
             "target": "industry_Robotics"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7543756365776062,
+            "distance": 0.2456243634223938,
             "source": "r1",
             "target": "expertise_Machine_Learning"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7977814078330994,
+            "distance": 0.20221859216690063,
             "source": "r1",
             "target": "expertise_Computer_Vision"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9324871897697449,
+            "distance": 0.06751281023025513,
             "source": "r1",
             "target": "expertise_Neural_Networks"
         },
         {
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.9244718551635742,
+            "distance": 0.07552814483642578,
+            "source": "r1",
+            "target": "b1"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.9266453981399536,
+            "distance": 0.07335460186004639,
+            "source": "r1",
+            "target": "b3"
+        },
+        {
             "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.7252342104911804,
+            "distance": 0.2747657895088196,
+            "source": "inst_Stanford_University",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.7415502667427063,
+            "distance": 0.2584497332572937,
+            "source": "inst_Stanford_University",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7713078856468201,
+            "distance": 0.22869211435317993,
+            "source": "skill_Python",
+            "target": "r3"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7062004208564758,
+            "distance": 0.29379957914352417,
+            "source": "skill_Python",
+            "target": "r4"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.6438353061676025,
+            "distance": 0.35616469383239746,
+            "source": "skill_Python",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.6624393463134766,
+            "distance": 0.33756065368652344,
+            "source": "skill_Python",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7356777191162109,
+            "distance": 0.26432228088378906,
+            "source": "skill_Python",
+            "target": "r14"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7050918340682983,
+            "distance": 0.29490816593170166,
+            "source": "skill_Python",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7767488956451416,
+            "distance": 0.2232511043548584,
+            "source": "skill_TensorFlow",
+            "target": "r4"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7040243148803711,
+            "distance": 0.2959756851196289,
+            "source": "skill_TensorFlow",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.633531391620636,
+            "distance": 0.366468608379364,
+            "source": "skill_TensorFlow",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7440146207809448,
+            "distance": 0.2559853792190552,
+            "source": "skill_TensorFlow",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8156352043151855,
+            "distance": 0.18436479568481445,
+            "source": "skill_PyTorch",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.7911630272865295,
+            "distance": 0.20883697271347046,
+            "source": "proj1",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.5733343362808228,
+            "distance": 0.42666566371917725,
+            "source": "edu_MIT",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.8921067118644714,
+            "distance": 0.10789328813552856,
+            "source": "edu_MIT",
+            "target": "pat16"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7750530242919922,
+            "distance": 0.2249469757080078,
+            "source": "expertise_Machine_Learning",
+            "target": "r4"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7502520084381104,
+            "distance": 0.24974799156188965,
+            "source": "expertise_Machine_Learning",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7052939534187317,
+            "distance": 0.2947060465812683,
+            "source": "expertise_Machine_Learning",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7536635398864746,
+            "distance": 0.2463364601135254,
+            "source": "expertise_Machine_Learning",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7820277810096741,
+            "distance": 0.21797221899032593,
+            "source": "expertise_Computer_Vision",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.6719533801078796,
+            "distance": 0.32804661989212036,
+            "source": "expertise_Computer_Vision",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.9260864853858948,
+            "distance": 0.07391351461410522,
             "source": "r2",
             "target": "inst_ETH_Zurich"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9617548584938049,
+            "distance": 0.03824514150619507,
             "source": "r2",
             "target": "pat2"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9603334069252014,
+            "distance": 0.039666593074798584,
             "source": "r2",
             "target": "pat3"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7853909134864807,
+            "distance": 0.2146090865135193,
             "source": "r2",
             "target": "skill_Lab_Management"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9310360550880432,
+            "distance": 0.06896394491195679,
             "source": "r2",
             "target": "skill_Grant_Writing"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9373202323913574,
+            "distance": 0.06267976760864258,
             "source": "r2",
             "target": "skill_Materials_Characterization"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9360342621803284,
+            "distance": 0.06396573781967163,
             "source": "r2",
             "target": "proj2"
         },
         {
             "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.9622359871864319,
+            "distance": 0.037764012813568115,
             "source": "r2",
             "target": "edu_Cambridge_University"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9323338866233826,
+            "distance": 0.06766611337661743,
             "source": "r2",
             "target": "expertise_Materials_Science"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9377049207687378,
+            "distance": 0.06229507923126221,
             "source": "r2",
             "target": "expertise_Nanotechnology"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9347596764564514,
+            "distance": 0.06524032354354858,
             "source": "r2",
             "target": "expertise_Green_Chemistry"
         },
         {
             "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.8982285857200623,
+            "distance": 0.10177141427993774,
+            "source": "inst_ETH_Zurich",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.749793529510498,
+            "distance": 0.25020647048950195,
+            "source": "skill_Lab_Management",
+            "target": "r5"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7895511388778687,
+            "distance": 0.21044886112213135,
+            "source": "skill_Lab_Management",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8068016171455383,
+            "distance": 0.19319838285446167,
+            "source": "skill_Lab_Management",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8435543775558472,
+            "distance": 0.15644562244415283,
+            "source": "skill_Lab_Management",
+            "target": "b10"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9136741161346436,
+            "distance": 0.08632588386535645,
+            "source": "skill_Grant_Writing",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8995827436447144,
+            "distance": 0.10041725635528564,
+            "source": "skill_Materials_Characterization",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9118486046791077,
+            "distance": 0.08815139532089233,
+            "source": "proj2",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9274224638938904,
+            "distance": 0.07257753610610962,
+            "source": "expertise_Materials_Science",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9121533632278442,
+            "distance": 0.08784663677215576,
+            "source": "expertise_Nanotechnology",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.920653223991394,
+            "distance": 0.07934677600860596,
+            "source": "expertise_Green_Chemistry",
+            "target": "r13"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.9410287737846375,
+            "distance": 0.05897122621536255,
             "source": "r3",
             "target": "inst_Harvard_University"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9581906199455261,
+            "distance": 0.04180938005447388,
             "source": "r3",
             "target": "pat4"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9065227508544922,
+            "distance": 0.09347724914550781,
             "source": "r3",
             "target": "skill_MATLAB"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r3",
-            "target": "skill_Python"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9389264583587646,
+            "distance": 0.06107354164123535,
             "source": "r3",
             "target": "skill_Simulation_Design"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8255546689033508,
+            "distance": 0.17444533109664917,
             "source": "r3",
             "target": "proj4"
         },
         {
             "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.8981184959411621,
+            "distance": 0.10188150405883789,
             "source": "r3",
             "target": "edu_Harvard_University"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9503516554832458,
+            "distance": 0.04964834451675415,
             "source": "r3",
             "target": "expertise_Quantum_Mechanics"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9437100887298584,
+            "distance": 0.0562899112701416,
             "source": "r3",
             "target": "expertise_Optics"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.8880930542945862,
+            "distance": 0.11190694570541382,
             "source": "r3",
             "target": "expertise_Photonics"
         },
         {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8865764737129211,
+            "distance": 0.11342352628707886,
+            "source": "skill_MATLAB",
+            "target": "r14"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8104005455970764,
+            "distance": 0.18959945440292358,
+            "source": "proj4",
+            "target": "r14"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9175856113433838,
+            "distance": 0.08241438865661621,
+            "source": "proj4",
+            "target": "b5"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.9116945266723633,
+            "distance": 0.08830547332763672,
+            "source": "edu_Harvard_University",
+            "target": "r14"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9016504287719727,
+            "distance": 0.09834957122802734,
+            "source": "expertise_Photonics",
+            "target": "r14"
+        },
+        {
             "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.8532487750053406,
+            "distance": 0.14675122499465942,
             "source": "r4",
             "target": "inst_Google_Research"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9390144944190979,
+            "distance": 0.0609855055809021,
             "source": "r4",
             "target": "pat5"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r4",
-            "target": "skill_Python"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9433807134628296,
+            "distance": 0.05661928653717041,
             "source": "r4",
             "target": "skill_SQL"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r4",
-            "target": "skill_TensorFlow"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.8724808096885681,
+            "distance": 0.12751919031143188,
             "source": "r4",
             "target": "skill_Cloud_Computing"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8442062139511108,
+            "distance": 0.15579378604888916,
             "source": "r4",
             "target": "proj5"
         },
         {
             "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.8433637619018555,
+            "distance": 0.15663623809814453,
             "source": "r4",
             "target": "edu_UC_Berkeley"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9504460692405701,
+            "distance": 0.04955393075942993,
             "source": "r4",
             "target": "expertise_Data_Science"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9389539361000061,
+            "distance": 0.061046063899993896,
             "source": "r4",
             "target": "expertise_Big_Data_Analytics"
         },
         {
-            "relationship_type": "EXPERT_IN",
-            "source": "r4",
-            "target": "expertise_Machine_Learning"
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.8018460869789124,
+            "distance": 0.19815391302108765,
+            "source": "inst_Google_Research",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.7964186668395996,
+            "distance": 0.2035813331604004,
+            "source": "skill_Cloud_Computing",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8448664546012878,
+            "distance": 0.15513354539871216,
+            "source": "proj5",
+            "target": "r15"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.753695547580719,
+            "distance": 0.246304452419281,
+            "source": "edu_UC_Berkeley",
+            "target": "r6"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.7728199362754822,
+            "distance": 0.22718006372451782,
+            "source": "edu_UC_Berkeley",
+            "target": "r15"
         },
         {
             "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.928398072719574,
+            "distance": 0.07160192728042603,
             "source": "r5",
             "target": "inst_National_Institutes_of_Health"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9497339129447937,
+            "distance": 0.0502660870552063,
             "source": "r5",
             "target": "pat6"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r5",
-            "target": "skill_Lab_Management"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9241984486579895,
+            "distance": 0.0758015513420105,
             "source": "r5",
             "target": "skill_DNA_Sequencing"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9177402853965759,
+            "distance": 0.08225971460342407,
             "source": "r5",
             "target": "skill_Data_Analysis"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.915783703327179,
+            "distance": 0.08421629667282104,
             "source": "r5",
             "target": "proj6"
         },
         {
             "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.9206302165985107,
+            "distance": 0.07936978340148926,
             "source": "r5",
             "target": "edu_Johns_Hopkins_University"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.913834810256958,
+            "distance": 0.08616518974304199,
             "source": "r5",
             "target": "expertise_Gene_Editing"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9169970750808716,
+            "distance": 0.08300292491912842,
             "source": "r5",
             "target": "expertise_CRISPR"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9142513275146484,
+            "distance": 0.08574867248535156,
             "source": "r5",
             "target": "expertise_Synthetic_Biology"
         },
         {
-            "relationship_type": "AFFILIATED_WITH",
-            "source": "r6",
-            "target": "inst_Stanford_University"
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.8128401041030884,
+            "distance": 0.18715989589691162,
+            "source": "r5",
+            "target": "b2"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.9475176334381104,
+            "distance": 0.05248236656188965,
+            "source": "r5",
+            "target": "b4"
+        },
+        {
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.9396628737449646,
+            "distance": 0.0603371262550354,
+            "source": "r5",
+            "target": "b8"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9568275809288025,
+            "distance": 0.04317241907119751,
+            "source": "r5",
+            "target": "skill_Quantum_Mechanics"
+        },
+        {
+            "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.9131921529769897,
+            "distance": 0.08680784702301025,
+            "source": "inst_National_Institutes_of_Health",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9236281514167786,
+            "distance": 0.07637184858322144,
+            "source": "skill_DNA_Sequencing",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9152917861938477,
+            "distance": 0.08470821380615234,
+            "source": "skill_Data_Analysis",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9256483912467957,
+            "distance": 0.07435160875320435,
+            "source": "proj6",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.9220989346504211,
+            "distance": 0.07790106534957886,
+            "source": "edu_Johns_Hopkins_University",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9362146258354187,
+            "distance": 0.0637853741645813,
+            "source": "expertise_Gene_Editing",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9390373826026917,
+            "distance": 0.06096261739730835,
+            "source": "expertise_CRISPR",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9437867999076843,
+            "distance": 0.056213200092315674,
+            "source": "expertise_Synthetic_Biology",
+            "target": "r12"
+        },
+        {
+            "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.8992976546287537,
+            "distance": 0.10070234537124634,
             "source": "r6",
             "target": "pat9"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r6",
-            "target": "skill_Python"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r6",
-            "target": "skill_TensorFlow"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r6",
-            "target": "skill_PyTorch"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.899517834186554,
+            "distance": 0.10048216581344604,
             "source": "r6",
             "target": "skill_Deep_Learning"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8969357013702393,
+            "distance": 0.10306429862976074,
             "source": "r6",
             "target": "proj10"
         },
         {
             "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.8006057739257812,
+            "distance": 0.19939422607421875,
             "source": "r6",
             "target": "proj11"
         },
         {
-            "relationship_type": "STUDIED_AT",
-            "source": "r6",
-            "target": "edu_UC_Berkeley"
-        },
-        {
             "relationship_type": "EXPERT_IN",
-            "source": "r6",
-            "target": "expertise_Machine_Learning"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r6",
-            "target": "expertise_Computer_Vision"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.8248270153999329,
+            "distance": 0.17517298460006714,
             "source": "r6",
             "target": "expertise_Natural_Language_Processing"
         },
         {
-            "relationship_type": "AFFILIATED_WITH",
-            "source": "r11",
-            "target": "inst_Google_Research"
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.7132585048675537,
+            "distance": 0.2867414951324463,
+            "source": "r6",
+            "target": "b2"
+        },
+        {
+            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.7325026988983154,
+            "distance": 0.26749730110168457,
+            "source": "proj11",
+            "target": "r11"
+        },
+        {
+            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.7469329833984375,
+            "distance": 0.2530670166015625,
+            "source": "expertise_Natural_Language_Processing",
+            "target": "r11"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.8415524959564209,
+            "distance": 0.1584475040435791,
             "source": "r11",
             "target": "pat15"
         },
         {
-            "relationship_type": "HAS_SKILL",
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.6807180047035217,
+            "distance": 0.31928199529647827,
             "source": "r11",
-            "target": "skill_Python"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r11",
-            "target": "skill_TensorFlow"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r11",
-            "target": "skill_Cloud_Computing"
-        },
-        {
-            "relationship_type": "WORKED_ON",
-            "source": "r11",
-            "target": "proj1"
-        },
-        {
-            "relationship_type": "WORKED_ON",
-            "source": "r11",
-            "target": "proj11"
-        },
-        {
-            "relationship_type": "STUDIED_AT",
-            "source": "r11",
-            "target": "edu_MIT"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r11",
-            "target": "expertise_Machine_Learning"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r11",
-            "target": "expertise_Natural_Language_Processing"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r11",
-            "target": "expertise_Computer_Vision"
-        },
-        {
-            "relationship_type": "AFFILIATED_WITH",
-            "source": "r12",
-            "target": "inst_National_Institutes_of_Health"
+            "target": "b7"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.8369315266609192,
+            "distance": 0.1630684733390808,
             "source": "r12",
             "target": "pat16"
         },
         {
-            "relationship_type": "HAS_SKILL",
-            "source": "r12",
-            "target": "skill_DNA_Sequencing"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r12",
-            "target": "skill_Lab_Management"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r12",
-            "target": "skill_Data_Analysis"
-        },
-        {
             "relationship_type": "WORKED_ON",
-            "source": "r12",
-            "target": "proj6"
-        },
-        {
-            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9340240359306335,
+            "distance": 0.06597596406936646,
             "source": "r12",
             "target": "proj12"
         },
         {
-            "relationship_type": "STUDIED_AT",
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.9519333839416504,
+            "distance": 0.04806661605834961,
             "source": "r12",
-            "target": "edu_Johns_Hopkins_University"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r12",
-            "target": "expertise_Synthetic_Biology"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r12",
-            "target": "expertise_CRISPR"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r12",
-            "target": "expertise_Gene_Editing"
-        },
-        {
-            "relationship_type": "AFFILIATED_WITH",
-            "source": "r13",
-            "target": "inst_ETH_Zurich"
+            "target": "b9"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9393212199211121,
+            "distance": 0.06067878007888794,
             "source": "r13",
             "target": "pat17"
         },
         {
-            "relationship_type": "HAS_SKILL",
-            "source": "r13",
-            "target": "skill_Materials_Characterization"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r13",
-            "target": "skill_Lab_Management"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r13",
-            "target": "skill_Grant_Writing"
-        },
-        {
             "relationship_type": "WORKED_ON",
-            "source": "r13",
-            "target": "proj2"
-        },
-        {
-            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9388560056686401,
+            "distance": 0.06114399433135986,
             "source": "r13",
             "target": "proj13"
         },
         {
             "relationship_type": "STUDIED_AT",
+            "weight": 1,
+            "score": 0.9421142935752869,
+            "distance": 0.057885706424713135,
             "source": "r13",
             "target": "edu_ETH_Zurich"
         },
         {
-            "relationship_type": "EXPERT_IN",
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.8078727722167969,
+            "distance": 0.19212722778320312,
             "source": "r13",
-            "target": "expertise_Materials_Science"
+            "target": "b7"
         },
         {
-            "relationship_type": "EXPERT_IN",
+            "relationship_type": "COLLABORATES_WITH",
+            "weight": 1,
+            "score": 0.792892575263977,
+            "distance": 0.20710742473602295,
             "source": "r13",
-            "target": "expertise_Nanotechnology"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
-            "source": "r13",
-            "target": "expertise_Green_Chemistry"
+            "target": "b10"
         },
         {
             "relationship_type": "AFFILIATED_WITH",
+            "weight": 1,
+            "score": 0.9373044967651367,
+            "distance": 0.06269550323486328,
             "source": "r14",
             "target": "inst_MIT"
         },
         {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9166242480278015,
+            "distance": 0.08337575197219849,
             "source": "r14",
             "target": "pat18"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r14",
-            "target": "skill_Python"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r14",
-            "target": "skill_MATLAB"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9381992220878601,
+            "distance": 0.06180077791213989,
             "source": "r14",
             "target": "skill_Circuit_Simulation"
         },
         {
             "relationship_type": "WORKED_ON",
-            "source": "r14",
-            "target": "proj4"
-        },
-        {
-            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9295689463615417,
+            "distance": 0.07043105363845825,
             "source": "r14",
             "target": "proj14"
         },
         {
-            "relationship_type": "STUDIED_AT",
-            "source": "r14",
-            "target": "edu_Harvard_University"
-        },
-        {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9144902229309082,
+            "distance": 0.0855097770690918,
             "source": "r14",
             "target": "expertise_Quantum_Computing"
         },
         {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9346751570701599,
+            "distance": 0.06532484292984009,
             "source": "r14",
             "target": "expertise_Quantum_Error_Correction"
         },
         {
-            "relationship_type": "EXPERT_IN",
-            "source": "r14",
-            "target": "expertise_Photonics"
-        },
-        {
-            "relationship_type": "AFFILIATED_WITH",
-            "source": "r15",
-            "target": "inst_Stanford_University"
-        },
-        {
             "relationship_type": "HOLDS_PATENT",
+            "weight": 1,
+            "score": 0.9334384799003601,
+            "distance": 0.06656152009963989,
             "source": "r15",
             "target": "pat19"
         },
         {
             "relationship_type": "HAS_SKILL",
-            "source": "r15",
-            "target": "skill_Python"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
-            "source": "r15",
-            "target": "skill_TensorFlow"
-        },
-        {
-            "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9184343218803406,
+            "distance": 0.08156567811965942,
             "source": "r15",
             "target": "skill_Control_Theory"
         },
         {
             "relationship_type": "HAS_SKILL",
+            "weight": 1,
+            "score": 0.9340730309486389,
+            "distance": 0.06592696905136108,
             "source": "r15",
             "target": "skill_ROS"
         },
         {
             "relationship_type": "WORKED_ON",
-            "source": "r15",
-            "target": "proj5"
-        },
-        {
-            "relationship_type": "WORKED_ON",
+            "weight": 1,
+            "score": 0.9377642869949341,
+            "distance": 0.06223571300506592,
             "source": "r15",
             "target": "proj8"
         },
         {
-            "relationship_type": "STUDIED_AT",
-            "source": "r15",
-            "target": "edu_UC_Berkeley"
-        },
-        {
             "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9466262459754944,
+            "distance": 0.053373754024505615,
             "source": "r15",
             "target": "expertise_Humanoid_Robotics"
         },
         {
             "relationship_type": "EXPERT_IN",
-            "source": "r15",
-            "target": "expertise_Machine_Learning"
-        },
-        {
-            "relationship_type": "EXPERT_IN",
+            "weight": 1,
+            "score": 0.9283549785614014,
+            "distance": 0.07164502143859863,
             "source": "r15",
             "target": "expertise_Control_Systems"
         },
         {
             "relationship_type": "COLLABORATES_WITH",
-            "source": "b1",
-            "target": "r1"
+            "weight": 1,
+            "score": 0.8431853652000427,
+            "distance": 0.15681463479995728,
+            "source": "r15",
+            "target": "b5"
         },
         {
             "relationship_type": "COLLABORATES_WITH",
-            "source": "b2",
-            "target": "r5"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b3",
-            "target": "r1"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b4",
-            "target": "r5"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b5",
-            "target": "r15"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b6",
-            "target": "r15"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b7",
-            "target": "r13"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b8",
-            "target": "r5"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b9",
-            "target": "r12"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b10",
-            "target": "r13"
-        },
-        {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "b10",
+            "weight": 1,
+            "score": 0.7372102737426758,
+            "distance": 0.2627897262573242,
+            "source": "r15",
             "target": "b6"
         },
         {
-            "relationship_type": "HAS_SKILL",
-            "source": "b10",
-            "target": "skill_Lab_Management"
-        },
-        {
-            "relationship_type": "WORKED_ON",
-            "source": "b5",
-            "target": "proj4"
-        },
-        {
             "relationship_type": "COLLABORATES_WITH",
-            "source": "b7",
-            "target": "r11"
-        },
-                {
-            "relationship_type": "HOLDS_PATENT",
-            "source": "pat16",
-            "target": "edu_MIT"
-        },
-                        {
-            "relationship_type": "HOLDS_PATENT",
-            "source": "r5",
-            "target": "skill_Quantum_Mechanics"
-        },
-                                {
-            "relationship_type": "COLLABORATES_WITH",
-            "source": "r6",
-            "target": "b2"
+            "weight": 1,
+            "score": 0.918881356716156,
+            "distance": 0.081118643283844,
+            "source": "b6",
+            "target": "b10"
         }
     ]
 }
